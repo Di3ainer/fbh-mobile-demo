@@ -10,6 +10,6 @@ Use frame-test.html to see whether the app opens the page inside an iframe and w
 
 The app's dedicated page embeds the site in an iframe. The host must allow framing (no `X-Frame-Options` / `frame-ancestors` restriction) and must answer the request method the app uses. GitHub Pages only serves GET/HEAD and returns 405 to POST.
 
-## Hosting on Cloudflare Pages
+## Hosting on Cloudflare Workers
 
-Cloudflare dashboard → Workers & Pages → Create → Pages → Connect to Git → pick this repo, branch `main`, no build command, output directory `/`. `functions/_middleware.js` makes POST requests return the page instead of 405.
+The Cloudflare project `fbh-mobile-demo` (Workers & Pages → Connect to Git) deploys this repo on every push to `main`. `wrangler.jsonc` serves the files as static assets and `worker/index.js` makes POST requests return the page instead of 405.
