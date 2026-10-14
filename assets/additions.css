@@ -32,3 +32,6 @@ body{padding-top:50px!important}
 
 /* Package cards: small round arrow in the corner and a slight press effect, so it is clear they open */
 .card-link{position:relative}.card-link img{transition:transform .15s ease}.card-link:active img{transform:scale(.98)}.card-link:after{content:"";position:absolute;right:12px;bottom:12px;width:30px;height:30px;border-radius:50%;background:#7185ab url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M9 6l6 6-6 6'/%3E%3C/svg%3E") center/16px no-repeat;pointer-events:none}
+
+/* Bottom bar: light background and booking button moved right, so the app's own round back button (bottom left) has its own space and stays visible */
+.stickyBottom{background:#fff!important;box-shadow:0 -1px 0 #ececec,0 -6px 18px rgba(0,0,0,.05)}.stickyBottom .elBTN{margin-left:52px!important}.booking{background:#fff!important;box-shadow:0 -1px 0 #ececec,0 -6px 18px rgba(0,0,0,.05);padding-left:67px!important}
