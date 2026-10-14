@@ -26,3 +26,6 @@ body{padding-top:50px!important}
 
 /* Keep space above the first heading when the brand links row is hidden (Jumestus, Koolitused) */
 .new-page .brand-jumps[hidden]{display:block!important;visibility:hidden;height:0;overflow:hidden;margin:0 0 26px!important}
+
+/* Space between the page title and the help box under it */
+.new-page h1+.treatment-help{margin-top:26px}
