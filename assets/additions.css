@@ -35,3 +35,9 @@ body{padding-top:50px!important}
 
 /* Bottom bar: light background and booking button moved right, so the app's own round back button (bottom left) has its own space and stays visible */
 .stickyBottom{background:#fff!important;box-shadow:0 -1px 0 #ececec,0 -6px 18px rgba(0,0,0,.05)}.stickyBottom .elBTN{margin-left:52px!important}.booking{background:#fff!important;box-shadow:0 -1px 0 #ececec,0 -6px 18px rgba(0,0,0,.05);padding-left:67px!important}
+
+/* Booking button: thinner (40px) and lifted so it lines up with the app's back button */
+.stickyBottom{padding-top:0!important;padding-bottom:0!important}.stickyBottom .row{padding-top:6px!important;padding-bottom:21px!important}.stickyBottom .elBTN{margin-top:0!important}.stickyBottom .elButton{padding-top:0!important;padding-bottom:0!important;height:40px;display:flex!important;align-items:center;justify-content:center}.stickyBottom .elButton .elButtonText{font-size:15px!important}.booking{padding-top:6px!important;padding-bottom:calc(21px + env(safe-area-inset-bottom))!important}.booking a{padding-top:0!important;padding-bottom:0!important;height:40px;align-items:center;box-sizing:border-box}
+
+/* Smaller logo at the top */
+img[src="assets/0.png"]{width:180px!important;height:auto!important;display:block;margin-left:auto;margin-right:auto}
