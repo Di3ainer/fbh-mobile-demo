@@ -47,3 +47,6 @@ img[src="assets/0.png"]{width:180px!important;height:auto!important;display:bloc
 
 /* Loading feedback for links, menu rows and image cards. */
 .loading-control{position:relative}.navigation-spinner{display:none;position:absolute;right:14px;top:50%;width:20px;height:20px;margin-top:-10px;border:2px solid #d9e0ec;border-top-color:#7185ab;border-radius:50%;box-sizing:border-box;animation:button-spin .7s linear infinite;pointer-events:none;z-index:2}.is-opening>.navigation-spinner{display:block}.addons a.is-opening{background:#f5f7fb;border-radius:6px}.addons a.is-opening>b,.is-opening .fa_appended{visibility:hidden}.elButton>.navigation-spinner,.booking a>.navigation-spinner{border-color:rgba(255,255,255,.4);border-top-color:#fff}.loading-card>.navigation-spinner{top:auto;bottom:17px;right:17px;margin:0;background:#f5f7fb;box-shadow:0 0 0 6px #f5f7fb}.card-link.is-opening:after{visibility:hidden}.loading-card.is-opening>img{opacity:.9}.loading-control:focus-visible{outline-offset:3px}@keyframes button-spin{to{transform:rotate(360deg)}}@media(prefers-reduced-motion:reduce){.navigation-spinner{animation-duration:1.8s}.card-link img{transition:none}}
+
+/* Keep menu loading feedback comfortably left of the chevron. */
+.addons a>.navigation-spinner{right:44px}
