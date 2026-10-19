@@ -44,3 +44,6 @@ img[src="assets/0.png"]{width:180px!important;height:auto!important;display:bloc
 
 /* Package overview: logo links back to the homepage. */
 .package-header{padding:12px 18px 16px;border-bottom:1px solid #eee}.package-header a{display:flex;align-items:center;justify-content:center;min-height:44px}.package-header a:focus-visible{outline:2px solid #7dafae;outline-offset:4px}
+
+/* Offer-button loading indicator, without moving the label or resizing the button. */
+a.elButton:has(.button-spinner){position:relative}.button-spinner{display:none;position:absolute;right:14px;top:50%;width:16px;height:16px;margin-top:-8px;border:2px solid rgba(255,255,255,.4);border-top-color:#fff;border-radius:50%;box-sizing:border-box;animation:button-spin .7s linear infinite;pointer-events:none}.is-opening .button-spinner{display:block}.is-opening .fa_appended{visibility:hidden}@keyframes button-spin{to{transform:rotate(360deg)}}@media(prefers-reduced-motion:reduce){.button-spinner{animation-duration:1.8s}}
