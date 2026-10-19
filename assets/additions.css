@@ -41,3 +41,6 @@ body{padding-top:50px!important}
 
 /* Smaller logo at the top */
 img[src="assets/0.png"]{width:180px!important;height:auto!important;display:block;margin-left:auto;margin-right:auto}
+
+/* Package overview: logo links back to the homepage. */
+.package-header{padding:12px 18px 16px;border-bottom:1px solid #eee}.package-header a{display:flex;align-items:center;justify-content:center;min-height:44px}.package-header a:focus-visible{outline:2px solid #7dafae;outline-offset:4px}
