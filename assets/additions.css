@@ -50,3 +50,6 @@ img[src="assets/0.png"]{width:180px!important;height:auto!important;display:bloc
 
 /* Keep menu loading feedback comfortably left of the chevron. */
 .addons a>.navigation-spinner{right:44px}
+
+/* Reserve picture space before images load, so cards and arrows do not jump around */
+img.elImage[width][height]:not([src="assets/0.png"]){width:100%;height:auto;background:#f6efef}

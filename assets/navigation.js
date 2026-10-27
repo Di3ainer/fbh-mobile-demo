@@ -26,8 +26,11 @@ const prepareNavigation = (control, isCard = false) => {
 document.querySelectorAll('[data-element-link]').forEach(element => {
   const url = element.getAttribute('data-element-link');
   if (!url || !/^https?:$/.test(new URL(url, location.href).protocol)) return;
-  const control = element.tagName === 'IMG' ? element.parentElement : element;
-  prepareNavigation(control, element.tagName === 'IMG');
+  /* A banner picture with its own button below shows the spinner inside that button */
+  const bannerButton = element.tagName === 'IMG' && element.parentElement.nextElementSibling?.querySelector('a.elButton');
+  const control = bannerButton && bannerButton.href === new URL(url, location.href).href ? bannerButton
+    : element.tagName === 'IMG' ? element.parentElement : element;
+  if (control !== bannerButton) prepareNavigation(control, element.tagName === 'IMG');
   element.style.cursor = 'pointer';
   element.tabIndex = 0;
   element.setAttribute('role', 'link');
@@ -57,3 +60,6 @@ document.querySelectorAll('[data-page-element="AccordionItem"]').forEach(item=>{
 /* Mark package cards as tappable (they are pictures, so the arrow sits on top) */
 document.querySelectorAll('img[data-element-link^="ilupakett-"]').forEach(img=>img.parentElement.classList.add('card-link'));
 
+
+/* Give pictures their final shape before they load, so cards do not show as thin lines with stacked arrows */
+document.querySelectorAll('img.elImage[width][height]:not([src="assets/0.png"])').forEach(img=>{img.style.aspectRatio=img.getAttribute('width')+' / '+img.getAttribute('height')});
