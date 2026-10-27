@@ -55,4 +55,4 @@ img[src="assets/0.png"]{width:180px!important;height:auto!important;display:bloc
 img.elImage[width][height]:not([src="assets/0.png"]){width:100%;height:auto;background:#f6efef}
 
 /* Logo keeps its size while loading and sits at the same height on every page */
-img[src="assets/0.png"]{aspect-ratio:10/1}.new-page header{padding-top:10px}.package-header{padding-top:0}.package-header a{align-items:flex-start;padding-top:10px;box-sizing:border-box}
+img[src="assets/0.png"],[data-page-element="Image/V2"] img[src="assets/0.png"]{aspect-ratio:10/1}.new-page header{padding-top:10px}.package-header{padding-top:0}.package-header a{align-items:flex-start;padding-top:10px;box-sizing:border-box}
