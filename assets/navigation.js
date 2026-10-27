@@ -1,18 +1,32 @@
 /* Remember where the visitor was on each page, so going back (also with the app's back button) returns to the same spot */
 const scrollKey = 'fbh-scroll:' + (location.pathname.replace(/\.html$/, '').replace(/\/index$/, '/') || '/');
-function saveScroll() { try { sessionStorage.setItem(scrollKey, String(Math.round(window.scrollY))); } catch (e) {} }
+let restoringScroll = false;
+function saveScroll() { if (restoringScroll) return; try { sessionStorage.setItem(scrollKey, String(Math.round(window.scrollY))); } catch (e) {} }
 let scrollSaveTimer;
 window.addEventListener('scroll', () => { clearTimeout(scrollSaveTimer); scrollSaveTimer = setTimeout(saveScroll, 150); }, { passive: true });
 window.addEventListener('pagehide', saveScroll);
+try { history.scrollRestoration = 'manual'; } catch (e) {}
 (() => {
   let cameByLink = false, saved = null;
   try { cameByLink = sessionStorage.getItem('fbh-link-nav') === '1'; sessionStorage.removeItem('fbh-link-nav'); saved = sessionStorage.getItem(scrollKey); } catch (e) {}
   const navType = (performance.getEntriesByType && performance.getEntriesByType('navigation')[0] || {}).type;
-  if (saved === null || location.hash || (cameByLink && navType !== 'back_forward')) return;
+  const reveal = () => document.documentElement.classList.remove('fbh-restoring');
+  if (saved === null || location.hash || (cameByLink && navType !== 'back_forward')) return reveal();
   const y = parseInt(saved, 10);
-  const restore = () => { if (y > 0 && window.scrollY < 5) window.scrollTo(0, y); };
+  if (!(y > 0)) return reveal();
+  /* The app's browser may move the page back to the top after loading, so keep putting it back
+     for a short while, until the visitor touches the screen themselves */
+  restoringScroll = true;
+  let userMoved = false;
+  const stop = () => { userMoved = true; restoringScroll = false; };
+  ['touchstart', 'wheel', 'keydown'].forEach(type => window.addEventListener(type, stop, { once: true, passive: true }));
+  const restore = () => { if (!userMoved && Math.abs(window.scrollY - y) > 5) window.scrollTo(0, y); };
   restore();
+  reveal();
   window.addEventListener('load', restore, { once: true });
+  [50, 150, 300, 600, 1000].forEach(ms => setTimeout(restore, ms));
+  setTimeout(() => { restoringScroll = false; }, 1100);
+  window.addEventListener('pageshow', event => { if (event.persisted) restore(); });
 })();
 
 /* Loading feedback stays inside the selected navigation control. */
