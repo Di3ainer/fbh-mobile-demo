@@ -1,19 +1,24 @@
-/* Remember where the visitor was on each page, so going back (also with the app's back button) returns to the same spot */
+/* Remember where the visitor was on each page, so going back (also with the app's back button) returns to the same spot.
+   Kept in localStorage because the app opens each page in its own window, and those windows do not share per-window storage. */
 const scrollKey = 'fbh-scroll:' + (location.pathname.replace(/\.html$/, '').replace(/\/index$/, '/') || '/');
+const SCROLL_MEMORY_MS = 30 * 60 * 1000, LINK_FLAG_MS = 15 * 1000;
+const readStamped = key => { try { const [value, time] = (localStorage.getItem(key) || '').split('|'); return { value: parseInt(value, 10), age: Date.now() - parseInt(time, 10) }; } catch (e) { return { value: NaN, age: Infinity }; } };
+const writeStamped = (key, value) => { try { localStorage.setItem(key, value + '|' + Date.now()); } catch (e) {} };
 let restoringScroll = false;
-function saveScroll() { if (restoringScroll) return; try { sessionStorage.setItem(scrollKey, String(Math.round(window.scrollY))); } catch (e) {} }
+function saveScroll() { if (!restoringScroll) writeStamped(scrollKey, Math.round(window.scrollY)); }
 let scrollSaveTimer;
 window.addEventListener('scroll', () => { clearTimeout(scrollSaveTimer); scrollSaveTimer = setTimeout(saveScroll, 150); }, { passive: true });
 window.addEventListener('pagehide', saveScroll);
 try { history.scrollRestoration = 'manual'; } catch (e) {}
-(() => {
-  let cameByLink = false, saved = null;
-  try { cameByLink = sessionStorage.getItem('fbh-link-nav') === '1'; sessionStorage.removeItem('fbh-link-nav'); saved = sessionStorage.getItem(scrollKey); } catch (e) {}
+const restoreSavedScroll = () => {
+  const link = readStamped('fbh-link-nav');
+  const cameByLink = link.value === 1 && link.age < LINK_FLAG_MS;
+  try { localStorage.removeItem('fbh-link-nav'); } catch (e) {}
+  const saved = readStamped(scrollKey);
   const navType = (performance.getEntriesByType && performance.getEntriesByType('navigation')[0] || {}).type;
   const reveal = () => document.documentElement.classList.remove('fbh-restoring');
-  if (saved === null || location.hash || (cameByLink && navType !== 'back_forward')) return reveal();
-  const y = parseInt(saved, 10);
-  if (!(y > 0)) return reveal();
+  const y = saved.value;
+  if (!(y > 0) || saved.age > SCROLL_MEMORY_MS || location.hash || (cameByLink && navType !== 'back_forward')) return reveal();
   /* The app's browser may move the page back to the top after loading, so keep putting it back
      for a short while, until the visitor touches the screen themselves */
   restoringScroll = true;
@@ -26,8 +31,9 @@ try { history.scrollRestoration = 'manual'; } catch (e) {}
   window.addEventListener('load', restore, { once: true });
   [50, 150, 300, 600, 1000].forEach(ms => setTimeout(restore, ms));
   setTimeout(() => { restoringScroll = false; }, 1100);
-  window.addEventListener('pageshow', event => { if (event.persisted) restore(); });
-})();
+};
+restoreSavedScroll();
+window.addEventListener('pageshow', event => { if (event.persisted) restoreSavedScroll(); });
 
 /* Loading feedback stays inside the selected navigation control. */
 let navigationResetTimer;
@@ -45,7 +51,7 @@ const navigateWithFeedback = (control, url) => {
   control.setAttribute('aria-busy', 'true');
   navigationResetTimer = setTimeout(clearNavigationLoading, 8000);
   saveScroll();
-  try { sessionStorage.setItem('fbh-link-nav', '1'); } catch (e) {}
+  writeStamped('fbh-link-nav', 1);
   requestAnimationFrame(() => requestAnimationFrame(() => location.assign(url)));
 };
 const prepareNavigation = (control, isCard = false) => {
