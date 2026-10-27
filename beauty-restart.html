@@ -1,0 +1,2067 @@
+<!doctype html><html lang="et"><head><script>/* Going back: keep the page hidden until it is scrolled back to where the visitor was, so it does not show the top first and then jump */(function(){try{var g=function(k){var p=(localStorage.getItem(k)||'').split('|');return{v:parseInt(p[0],10),a:Date.now()-parseInt(p[1],10)}},s=g('fbh-scroll:'+(location.pathname.replace(/\.html$/,'').replace(/\/index$/,'/')||'/')),f=g('fbh-link-nav'),l=f.v===1&&f.a<15000,n=(performance.getEntriesByType&&performance.getEntriesByType('navigation')[0]||{}).type;if(s.v>0&&s.a<1800000&&!location.hash&&(!l||n==='back_forward')){var h=document.documentElement;h.classList.add('fbh-restoring');setTimeout(function(){h.classList.remove('fbh-restoring')},1500)}}catch(e){}})()</script><style>html.fbh-restoring body{visibility:hidden}</style><title>Beauty Restart</title><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="robots" content="noindex,nofollow"><link rel="stylesheet" href="assets/original.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css"><link rel="stylesheet" href="assets/additions.css"><style id='style-guide' type="text/css" > [data-style-guide-text] * {
+        --style-box-shadow-style-type: initial;
+        --style-box-shadow-distance-x: initial;
+        --style-box-shadow-distance-y: initial;
+        --style-box-shadow-blur: initial;
+        --style-box-shadow-spread: initial;
+        --style-box-shadow-color: initial;
+      }
+    
+[data-style-guide-border] * {
+        --style-box-shadow-style-type: initial;
+        --style-box-shadow-distance-x: initial;
+        --style-box-shadow-distance-y: initial;
+        --style-box-shadow-blur: initial;
+        --style-box-shadow-spread: initial;
+        --style-box-shadow-color: initial;
+      }
+    
+[data-style-guide-shadow] * {
+        --style-box-shadow-style-type: initial;
+        --style-box-shadow-distance-x: initial;
+        --style-box-shadow-distance-y: initial;
+        --style-box-shadow-blur: initial;
+        --style-box-shadow-spread: initial;
+        --style-box-shadow-color: initial;
+      }
+    
+[data-style-guide-button] * {
+        --style-box-shadow-style-type: initial;
+        --style-box-shadow-distance-x: initial;
+        --style-box-shadow-distance-y: initial;
+        --style-box-shadow-blur: initial;
+        --style-box-shadow-spread: initial;
+        --style-box-shadow-color: initial;
+      }
+    
+[data-style-guide-corner] * {
+        --style-box-shadow-style-type: initial;
+        --style-box-shadow-distance-x: initial;
+        --style-box-shadow-distance-y: initial;
+        --style-box-shadow-blur: initial;
+        --style-box-shadow-spread: initial;
+        --style-box-shadow-color: initial;
+      }
+    
+[data-style-guide-headline] * {
+        --style-box-shadow-style-type: initial;
+        --style-box-shadow-distance-x: initial;
+        --style-box-shadow-distance-y: initial;
+        --style-box-shadow-blur: initial;
+        --style-box-shadow-spread: initial;
+        --style-box-shadow-color: initial;
+      }
+    
+[data-style-guide-subheadline] * {
+        --style-box-shadow-style-type: initial;
+        --style-box-shadow-distance-x: initial;
+        --style-box-shadow-distance-y: initial;
+        --style-box-shadow-blur: initial;
+        --style-box-shadow-spread: initial;
+        --style-box-shadow-color: initial;
+      }
+    
+[data-style-guide-content] * {
+        --style-box-shadow-style-type: initial;
+        --style-box-shadow-distance-x: initial;
+        --style-box-shadow-distance-y: initial;
+        --style-box-shadow-blur: initial;
+        --style-box-shadow-spread: initial;
+        --style-box-shadow-color: initial;
+      }
+    
+[data-style-guide-animation] * {
+        --style-box-shadow-style-type: initial;
+        --style-box-shadow-distance-x: initial;
+        --style-box-shadow-distance-y: initial;
+        --style-box-shadow-blur: initial;
+        --style-box-shadow-spread: initial;
+        --style-box-shadow-color: initial;
+      }
+    :root {
+    --color-6Z-dD6588-1: rgb(255, 255, 255);
+--color-6Z-dD6588-2: rgb(7, 31, 47);
+--color-6Z-dD6588-3: rgb(225, 15, 17);
+--color-6Z-dD6588-4: rgb(64, 64, 64);
+--color-6Z-dD6588-5: rgb(253, 253, 253);
+--color-6Z-dD6588-6: rgb(225, 15, 17);
+--color-6Z-dD6588-7: rgb(0, 0, 0);
+--color-6Z-dD6588-8: rgb(225, 15, 17);
+  }
+  
+  [data-paint-colors] {
+    color: var(--style-color);
+  }
+  [data-paint-colors] .elHeadline {
+    color: var(--style-headline-color);
+  }
+  [data-paint-colors] .elSubheadline {
+    color: var(--style-subheadline-color);
+  }
+  [data-paint-colors] .elTypographyLink {
+    color: var(--style-link-color);
+  }
+  [data-paint-colors] .fa-fw {
+    color: var(--style-icon-color);
+  }
+  [data-paint-colors] .elBulletList .fa,
+  [data-paint-colors] .elBulletList .fas,
+  [data-paint-colors] .elBulletList .fa-fw {
+    color: var(--style-bullet-color);
+  }
+  
+      :root {
+      --style-guide-font-family-headline: "Ubuntu", sans-serif;
+--style-guide-font-weight-headline: 900;
+--style-guide-font-family-subheadline: "Ubuntu", sans-serif;
+--style-guide-font-weight-subheadline: 700;
+--style-guide-font-family-content: "Ubuntu", sans-serif;
+--style-guide-font-weight-content: 400;
+--style-guide-button-style1-background-color: rgb(227, 6, 19);
+--style-guide-button-style1-text-color: rgb(255, 255, 255);
+--style-guide-button-style1-hover-background-color: rgb(187, 3, 5);
+--style-guide-button-style1-hover-text-color: rgb(255, 255, 255);
+--style-guide-button-style1-active-background-color: rgb(250, 42, 44);
+--style-guide-button-style1-active-text-color: rgb(255, 255, 255);
+--style-guide-button-style2-background-color: var(--color-6Z-dD6588-7);
+--style-guide-button-style2-text-color: rgb(255, 255, 255);
+--style-guide-button-style2-hover-background-color: rgb(54, 54, 54);
+--style-guide-button-style2-hover-text-color: rgb(255, 255, 255);
+--style-guide-button-style2-active-background-color: rgb(58, 58, 58);
+--style-guide-button-style2-active-text-color: rgb(255, 255, 255);
+--style-guide-button-style3-background-color: rgb(255, 255, 255);
+--style-guide-button-style3-text-color: rgb(0, 0, 0);
+--style-guide-button-style3-hover-background-color: rgb(229, 229, 229);
+--style-guide-button-style3-hover-text-color: rgb(0, 0, 0);
+--style-guide-button-style3-active-background-color: rgb(241, 241, 241);
+--style-guide-button-style3-active-text-color: rgb(0, 0, 0);
+    }
+html {
+      font-size: 24px;
+    }
+.elPageContent [data-style-guide-headline] {
+      font-family: "Ubuntu", sans-serif;
+font-weight: 900;
+line-height: 100%;
+letter-spacing: 0.02rem;
+    }
+.elPageContent [data-style-guide-subheadline] {
+      font-family: "Ubuntu", sans-serif;
+font-weight: 700;
+letter-spacing: 0.01rem;
+line-height: 130%;
+    }
+.elPageContent [data-style-guide-content] {
+      font-family: "Ubuntu", sans-serif;
+font-weight: 400;
+line-height: 150%;
+letter-spacing: 0;
+    }
+.elPageContent [data-style-guide-subheadline="xl"] {
+      font-size: 1.25rem;
+    }
+.elPageContent [data-style-guide-headline="xl"] {
+      font-size: 2.7083rem;
+    }
+.elPageContent [data-style-guide-headline="l"] {
+      font-size: 2.0833rem;
+    }
+.elPageContent [data-style-guide-headline="m"] {
+      font-size: 1.7083rem;
+    }
+.elPageContent [data-style-guide-headline="s"] {
+      font-size: 1.0833rem;
+    }
+.elPageContent [data-style-guide-content="xl"] {
+      font-size: 1rem;
+    }
+.elPageContent [data-style-guide-content="l"] {
+      font-size: 0.8333rem;
+    }
+.elPageContent [data-style-guide-content="m"] {
+      font-size: 0.75rem;
+    }
+.elPageContent [data-style-guide-content="s"] {
+      font-size: 0.6667rem;
+    }
+.elPageContent [data-style-guide-subheadline="l"] {
+      font-size: 1rem;
+    }
+.elPageContent [data-style-guide-subheadline="m"] {
+      font-size: 0.75rem;
+    }
+.elPageContent [data-style-guide-subheadline="s"] {
+      font-size: 0.55rem;
+    }
+.elPageContent [data-style-guide-shadow="style1"] {
+      --style-box-shadow-style-type: ;
+--style-box-shadow-distance-x: 0px;
+--style-box-shadow-distance-y: 0px;
+--style-box-shadow-blur: 18px;
+--style-box-shadow-spread: -4px;
+--style-box-shadow-color: rgba(0, 0, 0, 0.18);
+box-shadow: var(--style-box-shadow-style-type) var(--style-box-shadow-distance-x) var(--style-box-shadow-distance-y) var(--style-box-shadow-blur) var(--style-box-shadow-spread) var(--style-box-shadow-color);
+    }
+.elPageContent [data-style-guide-shadow="style2"] {
+      --style-box-shadow-style-type: ;
+--style-box-shadow-distance-x: 0px;
+--style-box-shadow-distance-y: 0px;
+--style-box-shadow-blur: 39px;
+--style-box-shadow-spread: -8px;
+--style-box-shadow-color: rgba(0, 0, 0, 0.15);
+box-shadow: var(--style-box-shadow-style-type) var(--style-box-shadow-distance-x) var(--style-box-shadow-distance-y) var(--style-box-shadow-blur) var(--style-box-shadow-spread) var(--style-box-shadow-color);
+    }
+.elPageContent [data-style-guide-shadow="style3"] {
+      --style-box-shadow-style-type: ;
+--style-box-shadow-distance-x: 0px;
+--style-box-shadow-distance-y: 0px;
+--style-box-shadow-blur: 56px;
+--style-box-shadow-spread: -16px;
+--style-box-shadow-color: rgba(0, 0, 0, 0.2);
+box-shadow: var(--style-box-shadow-style-type) var(--style-box-shadow-distance-x) var(--style-box-shadow-distance-y) var(--style-box-shadow-blur) var(--style-box-shadow-spread) var(--style-box-shadow-color);
+    }
+.elPageContent [data-style-guide-border="style1"] {
+      border-style: solid;
+border-color: #EBEBEB;
+border-width: 1px;
+    }
+.elPageContent [data-style-guide-border="style2"] {
+      border-style: solid;
+border-color: #BBBBBB;
+border-width: 1px;
+    }
+.elPageContent [data-style-guide-border="style3"] {
+      border-style: solid;
+border-color: #5C5C5C;
+border-width: 1px;
+    }
+.elPageContent [data-style-guide-button="style1"] {
+      font-family: "Open Sans", sans-serif;
+border-style: none;
+border-radius: 5px;
+background: rgb(227, 6, 19);
+border-color: #123acb;
+border-width: 1px;
+    }
+.elPageContent [data-style-guide-button="style2"] {
+      font-family: "Open Sans", sans-serif;
+border-style: none;
+border-radius: 5px;
+background: var(--color-6Z-dD6588-7);
+border-color: var(--color-6Z-dD6588-6);
+border-width: 1px;
+    }
+.elPageContent [data-style-guide-button="style3"] {
+      border-width: 0px;
+border-radius: 5px;
+background: rgb(255, 255, 255);
+border-style: solid;
+border-color: rgb(244, 252, 255);
+    }
+.elPageContent [data-style-guide-button="style1"] .elButtonText {
+      color: rgb(255, 255, 255);
+font-size: 16px;
+letter-spacing: 0;
+line-height: 100%;
+font-family: "Ubuntu", sans-serif;
+font-weight: 500;
+    }
+.elPageContent [data-style-guide-button="style1"] .elButtonSub {
+      color: rgb(255, 255, 255);
+font-size: 14px;
+letter-spacing: 0;
+line-height: 100%;
+font-family: "Ubuntu", sans-serif;
+font-weight: 300;
+    }
+.elPageContent [data-style-guide-button="style2"] .elButtonText {
+      color: rgb(255, 255, 255);
+font-weight: 500;
+font-size: 16px;
+letter-spacing: 0;
+line-height: 100%;
+font-family: "Ubuntu", sans-serif;
+    }
+.elPageContent [data-style-guide-button="style2"] .elButtonSub {
+      color: rgb(255, 255, 255);
+font-weight: 400;
+font-size: 14px;
+font-family: "Ubuntu", sans-serif;
+    }
+.elPageContent [data-style-guide-button="style3"] .elButtonText {
+      color: rgb(0, 0, 0);
+font-size: 18px;
+letter-spacing: 0;
+line-height: 100%;
+font-family: "Ubuntu", sans-serif;
+font-weight: 500;
+    }
+.elPageContent [data-style-guide-button="style3"] .elButtonSub {
+      color: rgb(0, 0, 0);
+font-size: 14px;
+letter-spacing: 0;
+line-height: 100%;
+font-family: "Ubuntu", sans-serif;
+font-weight: 400;
+    }
+.elPageContent [data-style-guide-button="style1"]:hover,
+
+.elPageContent [data-style-guide-button="style1"].elButtonHovered {
+      background: rgb(187, 3, 5);
+    }
+.elPageContent [data-style-guide-button="style1"]:active,
+
+.elPageContent [data-style-guide-button="style1"].elButtonActive {
+      background: rgb(250, 42, 44);
+    }
+.elPageContent [data-style-guide-button="style1"]:hover .elButtonText,
+
+.elPageContent [data-style-guide-button="style1"].elButtonHovered .elButtonText {
+      color: rgb(255, 255, 255);
+    }
+.elPageContent [data-style-guide-button="style1"]:active .elButtonText,
+
+.elPageContent [data-style-guide-button="style1"].elButtonActive .elButtonText {
+      color: rgb(255, 255, 255);
+    }
+.elPageContent [data-style-guide-button="style1"]:hover .elButtonSub,
+
+.elPageContent [data-style-guide-button="style1"].elButtonHovered .elButtonSub {
+      color: rgb(255, 255, 255);
+    }
+.elPageContent [data-style-guide-button="style1"]:active .elButtonSub,
+
+.elPageContent [data-style-guide-button="style1"].elButtonActive .elButtonSub {
+      color: rgb(255, 255, 255);
+    }
+.elPageContent [data-style-guide-button="style2"]:hover,
+
+.elPageContent [data-style-guide-button="style2"].elButtonHovered {
+      background: rgb(54, 54, 54);
+    }
+.elPageContent [data-style-guide-button="style2"]:active,
+
+.elPageContent [data-style-guide-button="style2"].elButtonActive {
+      background: rgb(58, 58, 58);
+    }
+.elPageContent [data-style-guide-button="style2"]:hover .elButtonText,
+
+.elPageContent [data-style-guide-button="style2"].elButtonHovered .elButtonText {
+      color: rgb(255, 255, 255);
+    }
+.elPageContent [data-style-guide-button="style2"]:active .elButtonText,
+
+.elPageContent [data-style-guide-button="style2"].elButtonActive .elButtonText {
+      color: rgb(255, 255, 255);
+    }
+.elPageContent [data-style-guide-button="style2"]:hover .elButtonSub,
+
+.elPageContent [data-style-guide-button="style2"].elButtonHovered .elButtonSub {
+      color: rgb(255, 255, 255);
+    }
+.elPageContent [data-style-guide-button="style2"]:active .elButtonSub,
+
+.elPageContent [data-style-guide-button="style2"].elButtonActive .elButtonSub {
+      color: rgb(255, 255, 255);
+    }
+.elPageContent [data-style-guide-button="style3"]:hover,
+
+.elPageContent [data-style-guide-button="style3"].elButtonHovered {
+      background: rgb(229, 229, 229);
+    }
+.elPageContent [data-style-guide-button="style3"]:active,
+
+.elPageContent [data-style-guide-button="style3"].elButtonActive {
+      background: rgb(241, 241, 241);
+    }
+.elPageContent [data-style-guide-button="style3"]:hover .elButtonText,
+
+.elPageContent [data-style-guide-button="style3"].elButtonHovered .elButtonText {
+      color: rgb(0, 0, 0);
+    }
+.elPageContent [data-style-guide-button="style3"]:active .elButtonText,
+
+.elPageContent [data-style-guide-button="style3"].elButtonActive .elButtonText {
+      color: rgb(0, 0, 0);
+    }
+.elPageContent [data-style-guide-button="style3"]:hover .elButtonSub,
+
+.elPageContent [data-style-guide-button="style3"].elButtonHovered .elButtonSub {
+      color: rgb(0, 0, 0);
+    }
+.elPageContent [data-style-guide-button="style3"]:active .elButtonSub,
+
+.elPageContent [data-style-guide-button="style3"].elButtonActive .elButtonSub {
+      color: rgb(0, 0, 0);
+    }
+.elPageContent [data-style-guide-corner="style1"] {
+      border-radius: 4px;
+    }
+.elPageContent [data-style-guide-corner="style2"] {
+      border-radius: 12px;
+    }
+.elPageContent [data-style-guide-corner="style3"] {
+      border-radius: 20px;
+    }
+      @media (max-width: 770px) {
+        
+      html {
+      font-size: 17px;
+    }
+.elPageContent.elPageContent.elPageContent [data-style-guide-headline] {
+      letter-spacing: 0;
+line-height: 140%;
+    }
+.elPageContent.elPageContent.elPageContent [data-style-guide-headline="xl"] {
+      font-size: 1.95rem;
+    }
+.elPageContent.elPageContent.elPageContent [data-style-guide-headline="l"] {
+      font-size: 1.5rem;
+    }
+.elPageContent.elPageContent.elPageContent [data-style-guide-headline="m"] {
+      font-size: 1.25rem;
+    }
+.elPageContent.elPageContent.elPageContent [data-style-guide-headline="s"] {
+      font-size: 1rem;
+    }
+.elPageContent.elPageContent.elPageContent [data-style-guide-subheadline] {
+      letter-spacing: 0;
+line-height: 140%;
+    }
+.elPageContent.elPageContent.elPageContent [data-style-guide-subheadline="xl"] {
+      font-size: 1.25rem;
+    }
+.elPageContent.elPageContent.elPageContent [data-style-guide-subheadline="l"] {
+      font-size: 1rem;
+    }
+.elPageContent.elPageContent.elPageContent [data-style-guide-subheadline="m"] {
+      font-size: 0.8rem;
+    }
+.elPageContent.elPageContent.elPageContent [data-style-guide-subheadline="s"] {
+      font-size: 0.64rem;
+    }
+.elPageContent.elPageContent.elPageContent [data-style-guide-content] {
+      letter-spacing: 0;
+line-height: 140%;
+    }
+.elPageContent.elPageContent.elPageContent [data-style-guide-content="xl"] {
+      font-size: 1.56rem;
+    }
+.elPageContent.elPageContent.elPageContent [data-style-guide-content="l"] {
+      font-size: 1.25rem;
+    }
+.elPageContent.elPageContent.elPageContent [data-style-guide-content="m"] {
+      font-size: 1rem;
+    }
+.elPageContent.elPageContent.elPageContent [data-style-guide-content="s"] {
+      font-size: 0.8rem;
+    }
+      
+    
+      }
+    
+    @keyframes x1200loadleftfade-in {
+      0%   { opacity: 0; };
+      100% { opacity: 1; };
+    }
+
+    [data-style-guide-animation="style1"]:not([data-animation-state])[data-animation-type="fade-in"] {
+      opacity: 0;
+    }
+    
+  
+    [data-style-guide-animation="style1"][data-animation-state="running"][data-animation-type="fade-in"] {
+      -webkit-animation: x1200loadleftfade-in 1.2s  ease normal, disable-pointer-events; 
+      animation: x1200loadleftfade-in 1.2s  ease normal, disable-pointer-events;
+      animation-delay: 500ms;      
+      animation-fill-mode: both;
+    }
+    @keyframes x1200loadleftglide-in {
+      0%   { transform: translateX(-100%) };
+      100% { transform: translateX(0%) };
+    }
+
+    [data-style-guide-animation="style2"]:not([data-animation-state])[data-animation-type="glide-in"] {
+      transform: translateX(-100%);
+    }
+    
+  
+    [data-style-guide-animation="style2"][data-animation-state="running"][data-animation-type="glide-in"] {
+      -webkit-animation: x1200loadleftglide-in 1.2s  linear normal, disable-pointer-events; 
+      animation: x1200loadleftglide-in 1.2s  linear normal, disable-pointer-events;
+      animation-delay: 500ms;      
+      animation-fill-mode: both;
+    }
+    @keyframes x1200loadleftexpand-in {
+      0%   { transform: translateX(100%) };
+      100% { transform: translateX(0%) };
+    }
+
+    [data-style-guide-animation="style3"]:not([data-animation-state])[data-animation-type="expand-in"] {
+      0%   { transform: translateX(100%) };
+    }
+  
+    [data-style-guide-animation="style3"][data-animation-state="running"][data-animation-type="expand-in"] {
+      -webkit-animation: x1200loadleftexpand-in 1.2s  ease-in normal, disable-pointer-events; 
+      animation: x1200loadleftexpand-in 1.2s  ease-in normal, disable-pointer-events;
+      animation-delay: 500ms;      
+      animation-fill-mode: both;
+    }
+[data-paint-colors="lightest"] {
+      --style-color: var(--color-6Z-dD6588-2);
+--style-headline-color: var(--color-6Z-dD6588-2);
+--style-subheadline-color: var(--color-6Z-dD6588-8);
+--style-link-color: var(--color-6Z-dD6588-2);
+--style-icon-color: var(--color-6Z-dD6588-8);
+--style-bullet-color: var(--color-6Z-dD6588-8);
+--style-background-color: var(--color-6Z-dD6588-5);
+background: linear-gradient(var(--color-6Z-dD6588-5) 0%,var(--color-6Z-dD6588-5) 100%),var(--color-6Z-dD6588-5);
+--style-link-color-r: 7;
+--style-link-color-g: 31;
+--style-link-color-b: 47;
+    }
+      [data-paint-colors="lightest"] .elContent {
+      color: var(--color-6Z-dD6588-6);
+    }
+      
+    
+[data-paint-colors="light"] {
+      --style-color: var(--color-6Z-dD6588-2);
+--style-headline-color: var(--color-6Z-dD6588-2);
+--style-subheadline-color: var(--color-6Z-dD6588-3);
+--style-link-color: var(--color-6Z-dD6588-2);
+--style-icon-color: var(--color-6Z-dD6588-8);
+--style-bullet-color: var(--color-6Z-dD6588-8);
+--style-background-color: var(--color-6Z-dD6588-1);
+background: linear-gradient(rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 100%),var(--color-6Z-dD6588-1);
+--style-link-color-r: 7;
+--style-link-color-g: 31;
+--style-link-color-b: 47;
+    }
+      [data-paint-colors="light"] .elContent {
+      color: var(--color-6Z-dD6588-6);
+    }
+      
+    
+[data-paint-colors="colored"] {
+      --style-color: var(--color-6Z-dD6588-5);
+--style-headline-color: var(--color-6Z-dD6588-5);
+--style-subheadline-color: var(--color-6Z-dD6588-1);
+--style-link-color: var(--color-6Z-dD6588-5);
+--style-icon-color: var(--color-6Z-dD6588-8);
+--style-bullet-color: var(--color-6Z-dD6588-4);
+--style-background-color: var(--color-6Z-dD6588-6);
+background: linear-gradient(rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 100%),var(--color-6Z-dD6588-6);
+--style-link-color-r: 253;
+--style-link-color-g: 253;
+--style-link-color-b: 253;
+    }
+      [data-paint-colors="colored"] .elContent {
+      color: var(--color-6Z-dD6588-1);
+    }
+      
+    
+[data-paint-colors="dark"] {
+      --style-color: var(--color-6Z-dD6588-1);
+--style-headline-color: var(--color-6Z-dD6588-5);
+--style-subheadline-color: var(--color-6Z-dD6588-1);
+--style-link-color: var(--color-6Z-dD6588-8);
+--style-icon-color: var(--color-6Z-dD6588-8);
+--style-bullet-color: var(--color-6Z-dD6588-6);
+--style-background-color: var(--color-6Z-dD6588-4);
+background: linear-gradient(rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 100%),var(--color-6Z-dD6588-4);
+--style-link-color-r: 225;
+--style-link-color-g: 15;
+--style-link-color-b: 17;
+    }
+      [data-paint-colors="dark"] .elContent {
+      color: var(--color-6Z-dD6588-1);
+    }
+      
+    
+[data-paint-colors="darkest"] {
+      --style-color: var(--color-6Z-dD6588-1);
+--style-headline-color: var(--color-6Z-dD6588-1);
+--style-subheadline-color: var(--color-6Z-dD6588-3);
+--style-link-color: var(--color-6Z-dD6588-8);
+--style-icon-color: var(--color-6Z-dD6588-8);
+--style-bullet-color: var(--color-6Z-dD6588-8);
+--style-background-color: var(--color-6Z-dD6588-7);
+background: linear-gradient(rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0) 100%),var(--color-6Z-dD6588-7);
+--style-link-color-r: 225;
+--style-link-color-g: 15;
+--style-link-color-b: 17;
+    }
+      [data-paint-colors="darkest"] .elContent {
+      color: var(--color-6Z-dD6588-1);
+    }
+      
+     </style><style id="page-style" type="text/css">
+      .elPageContent {
+      font-family: "Poppins", sans-serif;
+font-weight: 400;
+    }
+      .elPageContent .elTypographyLink {
+      color: rgb(100, 127, 172);
+    }
+      
+    
+       
+      .id-6Z-pMkKXq-1.id-6Z-pMkKXq-1 .containerModal {
+      margin-bottom: 0px;
+margin-top: 60px;
+padding-top: 0px;
+padding-bottom: 0px;
+border-style: none;
+border-radius: 10px;
+padding-left: 10px;
+padding-right: 10px;
+border-color: #000000;
+border-width: 1px;
+    }
+.id-6Z-pMkKXq-1.id-6Z-pMkKXq-1 .elModalInnerContainer {
+      width: 40%;
+    }
+      @media (max-width: 770px) {
+        
+      .id-6Z-pMkKXq-1.id-6Z-pMkKXq-1.id-6Z-pMkKXq-1 .elModalInnerContainer {
+      width: 95%;
+    }
+      
+    
+      }
+    
+ .id-6Z-xxpa5Q-2.id-6Z-xxpa5Q-2 {
+      padding-bottom: 0px;
+padding-left: 0px;
+padding-right: 0px;
+    }
+ .id-6Z-xxpa5Q-3.id-6Z-xxpa5Q-3 {
+      width: 1170px;
+padding-bottom: 0px;
+padding-left: 0px;
+padding-right: 0px;
+    }
+      .id-6Z-xxpa5Q-3.id-6Z-xxpa5Q-3 .col-inner {
+      height: auto;
+    }
+      
+    
+ .id-6Z-dRy8wX-2.id-6Z-dRy8wX-2 {
+      padding-top: 10px;
+padding-bottom: 10px;
+margin-top: -25px;
+    }
+      .id-6Z-dRy8wX-2.id-6Z-dRy8wX-2 .elHeadline {
+      font-size: 0.71rem;
+color: rgb(225, 15, 17);
+    }
+      @media (max-width: 770px) {
+        
+      .id-6Z-dRy8wX-2.id-6Z-dRy8wX-2.id-6Z-dRy8wX-2 .elHeadline {
+      font-size: 0.82rem;
+    }
+      
+    
+      }
+    
+ .id-6Z-xxpa5Q-5.id-6Z-xxpa5Q-5 {
+      margin-top: 0px;
+    }
+      .id-6Z-xxpa5Q-5.id-6Z-xxpa5Q-5 [data-checkout-state="saved"] [data-page-element="TermsOfService/V1"] {
+      display: none;
+    }
+.id-6Z-xxpa5Q-5.id-6Z-xxpa5Q-5 .elProductCardModernInput {
+      margin-top: 15px;
+    }
+.id-6Z-xxpa5Q-5.id-6Z-xxpa5Q-5 [data-page-element="CheckoutHeader/V1"] .elCheckoutStepNumber {
+      border-radius: 50%;
+border-style: solid;
+border-color: #B7C6CE;
+border-width: 1px;
+    }
+.id-6Z-xxpa5Q-5.id-6Z-xxpa5Q-5 [data-page-element="ProductSelect/V1"] .elProductCardModernInput {
+      --selected-button-text: "Unselect";
+--unselected-button-text: "Select";
+    }
+.id-6Z-xxpa5Q-5.id-6Z-xxpa5Q-5 [data-page-element="ProductSelect/V1"] .elProductCard {
+      border-radius: 8px;
+padding-bottom: 0px;
+padding-top: 8px;
+border-style: solid;
+border-color: #DEDEE1;
+border-width: 1px;
+    }
+.id-6Z-xxpa5Q-5.id-6Z-xxpa5Q-5 [data-page-element="ProductSelect/V1"] .elProductCard.elProductCardSelected {
+      border-radius: 8px;
+border-style: solid;
+border-color: rgb(55, 81, 249);
+border-width: 1px;
+    }
+.id-6Z-xxpa5Q-5.id-6Z-xxpa5Q-5 [data-page-element="ProductSelect/V1"] .elProductCard.elProductCardSelected .elProductCardModernInput {
+      color: rgb(55, 81, 249);
+border-color: rgb(55, 81, 249);
+    }
+.id-6Z-xxpa5Q-5.id-6Z-xxpa5Q-5 [data-page-element="OrderBump/V1"] .elProductCardModernInput {
+      --selected-button-text: "Added";
+--unselected-button-text: "Add";
+    }
+.id-6Z-xxpa5Q-5.id-6Z-xxpa5Q-5 [data-page-element="OrderBump/V1"] .elProductCard {
+      border-radius: 8px;
+border-style: solid;
+border-color: #DEDEE1;
+border-width: 1px;
+    }
+.id-6Z-xxpa5Q-5.id-6Z-xxpa5Q-5 [data-page-element="OrderBump/V1"] .elProductCard.elProductCardSelected {
+      border-radius: 8px;
+border-style: solid;
+border-color: rgb(55, 81, 249);
+border-width: 1px;
+    }
+.id-6Z-xxpa5Q-5.id-6Z-xxpa5Q-5 [data-page-element="OrderBump/V1"] .elProductCard.elProductCardSelected .elOrderBumpProductCardModernInput {
+      color: rgb(55, 81, 249);
+border-color: rgb(55, 81, 249);
+    }
+.id-6Z-xxpa5Q-5.id-6Z-xxpa5Q-5 [data-page-element="OrderForm/V1"] .elFormItemWrapper {
+      margin-top: 15px;
+margin-left: 0px;
+margin-right: 0px;
+    }
+.id-6Z-xxpa5Q-5.id-6Z-xxpa5Q-5 [data-page-element="OrderForm/V1"] .elFormItemWrapper .borderHolder {
+      background: rgb(255, 255, 255);
+    }
+.id-6Z-xxpa5Q-5.id-6Z-xxpa5Q-5 [data-page-element="OrderForm/V1"] .elFormItemWrapper.elInputFocused .borderHolder {
+      background: rgb(238, 238, 238);
+    }
+.id-6Z-xxpa5Q-5.id-6Z-xxpa5Q-5 [data-page-element="OrderForm/V1"] .elFormItemWrapper.elInputWarning .borderHolder {
+      background: rgb(255, 236, 201);
+    }
+.id-6Z-xxpa5Q-5.id-6Z-xxpa5Q-5 [data-page-element="OrderForm/V1"] .elFormItemWrapper.elInputError .borderHolder {
+      background: rgb(240, 197, 197);
+    }
+.id-6Z-xxpa5Q-5.id-6Z-xxpa5Q-5 [data-page-element="OrderForm/V1"] .elFormItemWrapper.elInputValid .borderHolder {
+      background: rgb(190, 253, 165);
+    }
+.id-6Z-xxpa5Q-5.id-6Z-xxpa5Q-5 [data-page-element="OrderForm/V1"] .elFormItemWrapper .inputHolder,
+.id-6Z-xxpa5Q-5.id-6Z-xxpa5Q-5 
+[data-page-element="OrderForm/V1"] .elFormItemWrapper .borderHolder {
+      padding-top: 12px;
+padding-bottom: 12px;
+border-radius: 4px;
+padding-left: 12px;
+padding-right: 12px;
+border-style: solid;
+border-color: rgb(201, 201, 201);
+border-width: 1px;
+    }
+.id-6Z-xxpa5Q-5.id-6Z-xxpa5Q-5 [data-page-element="OrderForm/V1"] .elFormItemWrapper.elInputValid .inputHolder,
+.id-6Z-xxpa5Q-5.id-6Z-xxpa5Q-5 
+[data-page-element="OrderForm/V1"] .elFormItemWrapper.elInputValid .borderHolder {
+      border-radius: 4px;
+border-style: solid;
+border-color: green;
+border-width: 1px;
+    }
+.id-6Z-xxpa5Q-5.id-6Z-xxpa5Q-5 [data-page-element="OrderForm/V1"] .elFormItemWrapper.elInputError .inputHolder,
+.id-6Z-xxpa5Q-5.id-6Z-xxpa5Q-5 
+[data-page-element="OrderForm/V1"] .elFormItemWrapper.elInputError .borderHolder {
+      border-radius: 4px;
+border-style: solid;
+border-color: red;
+border-width: 1px;
+    }
+.id-6Z-xxpa5Q-5.id-6Z-xxpa5Q-5 [data-page-element="OrderForm/V1"] .elFormItemWrapper.elInputFocused .inputHolder,
+.id-6Z-xxpa5Q-5.id-6Z-xxpa5Q-5 
+[data-page-element="OrderForm/V1"] .elFormItemWrapper.elInputFocused .borderHolder {
+      border-radius: 4px;
+border-style: solid;
+border-color: rgb(155, 155, 155);
+border-width: 1px;
+    }
+.id-6Z-xxpa5Q-5.id-6Z-xxpa5Q-5 [data-page-element="OrderForm/V1"] .elFormItemWrapper.elInputWarning .inputHolder,
+.id-6Z-xxpa5Q-5.id-6Z-xxpa5Q-5 
+[data-page-element="OrderForm/V1"] .elFormItemWrapper.elInputWarning .borderHolder {
+      border-radius: 4px;
+border-style: solid;
+border-color: orange;
+border-width: 1px;
+    }
+.id-6Z-xxpa5Q-5.id-6Z-xxpa5Q-5 [data-page-element="MultiplePayments/V1"] .pai-payment-field {
+      font-size: 18px;
+padding-top: 10px;
+line-height: 100%;
+border-style: none;
+padding-left: 0px;
+padding-right: 0px;
+background: rgb(255, 255, 255);
+border-color: #dbdbdb;
+border-width: 1px;
+    }
+.id-6Z-xxpa5Q-5.id-6Z-xxpa5Q-5 [data-page-element="OrderSummary/V2"] .elOrderSummaryV2 {
+      border-radius: 8px;
+border-style: solid;
+border-color: #ECF0F5;
+border-width: 1px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+.id-6Z-xxpa5Q-5.id-6Z-xxpa5Q-5 .elSuperSelectWrapper {
+      border-radius: 4px;
+border-style: solid;
+border-color: #B7C6CE;
+border-width: 1px;
+    }
+.id-6Z-xxpa5Q-5.id-6Z-xxpa5Q-5 [data-page-element="CheckoutStepButton/V1"] .elButton {
+      border-style: none;
+background: rgb(227, 6, 19);
+    }
+.id-6Z-xxpa5Q-5.id-6Z-xxpa5Q-5 [data-page-element="ProductSelect/V1"] .elProductList {
+      gap: 0.82em;
+    }
+.id-6Z-xxpa5Q-5.id-6Z-xxpa5Q-5 [data-checkout-state="guest"] [data-page-element="OrderBump/V1"] {
+      display: none;
+    }
+.id-6Z-xxpa5Q-5.id-6Z-xxpa5Q-5 [data-checkout-state="guest"] [data-page-element="OrderSummary/V2"] {
+      display: none;
+    }
+.id-6Z-xxpa5Q-5.id-6Z-xxpa5Q-5 [data-page-element="ProductSelect/V1"] .elProductInputControls {
+      display: none;
+    }
+.id-6Z-xxpa5Q-5.id-6Z-xxpa5Q-5 [data-checkout-state="saved"] [data-page-element="OrderBump/V1"] {
+      display: none;
+    }
+.id-6Z-xxpa5Q-5.id-6Z-xxpa5Q-5 [data-checkout-state="saved"] [data-page-element="OrderSummary/V2"] {
+      display: none;
+    }
+.id-6Z-xxpa5Q-5.id-6Z-xxpa5Q-5 [data-checkout-state="saved"] [data-page-element="Link/V1"] {
+      display: none;
+    }
+.id-6Z-xxpa5Q-5.id-6Z-xxpa5Q-5 [data-page-element="CheckoutStepButton/V1"] .elButton .elButtonText {
+      font-weight: 700;
+line-height: 225%;
+    }
+.id-6Z-xxpa5Q-5.id-6Z-xxpa5Q-5 [data-page-element="CheckoutStepButton/V1"] .elCheckoutSubmitButton .elButton {
+      width: 327px;
+    }
+
+.id-6Z-xxpa5Q-5.id-6Z-xxpa5Q-5 [data-page-element="ProductSelect/V1"] {
+      border-style: none;
+padding-left: 0px;
+padding-right: 0px;
+background: ;
+border-color: #000000;
+border-width: 1px;
+    }
+.id-6Z-xxpa5Q-5.id-6Z-xxpa5Q-5 [data-page-element="CheckoutStepButton/V1"] .elButton:hover,
+.id-6Z-xxpa5Q-5.id-6Z-xxpa5Q-5 
+[data-page-element="CheckoutStepButton/V1"] .elButton.elButtonHovered {
+      background: rgb(240, 32, 43);
+    }
+.id-6Z-xxpa5Q-5.id-6Z-xxpa5Q-5 [data-page-element="CheckoutStepButton/V1"] .elButton:active,
+.id-6Z-xxpa5Q-5.id-6Z-xxpa5Q-5 
+[data-page-element="CheckoutStepButton/V1"] .elButton.elButtonActive {
+      background: rgb(240, 32, 43);
+    }
+.id-6Z-xxpa5Q-5.id-6Z-xxpa5Q-5 [data-page-element="MultiplePayments/V1"] {
+      margin-top: 10px;
+    }
+.id-6Z-xxpa5Q-5.id-6Z-xxpa5Q-5 [data-page-element="OrderForm/V1"] {
+      margin-top: 0px;
+    }
+.id-6Z-xxpa5Q-5.id-6Z-xxpa5Q-5 [data-page-element="MultiplePayments/V1"] .payment-icon {
+      font-size: 18px;
+    }
+.id-6Z-xxpa5Q-5.id-6Z-xxpa5Q-5 [data-page-element="CheckoutStepButton/V1"] {
+      margin-top: -15px;
+    }
+.id-6Z-xxpa5Q-5.id-6Z-xxpa5Q-5 [data-checkout-state="guest"] .elHeaderContainer {
+      display: none;
+    }
+.id-6Z-xxpa5Q-5.id-6Z-xxpa5Q-5 [data-checkout-state="guest"] [data-page-element="TermsOfService/V1"] {
+      display: none;
+    }
+      @media (min-width: 771px) {
+        
+      .id-6Z-xxpa5Q-5.id-6Z-xxpa5Q-5.id-6Z-xxpa5Q-5 [data-page-element="ProductSelect/V1"] .elProductCard .elProductCardInfoDescription {
+      margin-top: 8px;
+    }
+      
+    
+      }
+@media (max-width: 770px) {
+        
+      .id-6Z-xxpa5Q-5.id-6Z-xxpa5Q-5.id-6Z-xxpa5Q-5 [data-page-element="CheckoutHeader/V1"] .elCheckoutStepEditButton {
+      display: none;
+    }
+.id-6Z-xxpa5Q-5.id-6Z-xxpa5Q-5.id-6Z-xxpa5Q-5 [data-page-element="CheckoutHeader/V1"] .elCheckoutTitleContainer {
+      margin-left: 8px;
+    }
+.id-6Z-xxpa5Q-5.id-6Z-xxpa5Q-5.id-6Z-xxpa5Q-5 [data-page-element="CheckoutHeader/V1"] .elCheckoutStepNumber {
+      font-size: 10px;
+    }
+.id-6Z-xxpa5Q-5.id-6Z-xxpa5Q-5.id-6Z-xxpa5Q-5 [data-page-element="CheckoutHeader/V1"] .elCheckoutStepHeading .elHeadline {
+      font-size: 14px;
+    }
+      
+    
+      }
+    
+      
+       .id-6Z-pMkKXq-0.id-6Z-pMkKXq-0 {
+      display: block;
+background: rgb(255, 255, 255);
+    }
+ .id-6Z-VOYZV4-33.id-6Z-VOYZV4-33 {
+      padding-bottom: 7px;
+    }
+ .id-6Z-qvrazX-26.id-6Z-qvrazX-26 {
+      width: 1170px;
+    }
+ .id-6Z-VOYZV4-50.id-6Z-VOYZV4-50 {
+      padding-top: 10px;
+padding-bottom: 10px;
+    }
+      .id-6Z-VOYZV4-50.id-6Z-VOYZV4-50 .elHeadline {
+      text-align: left;
+font-weight: 400;
+font-family: "Poppins", sans-serif;
+text-transform: uppercase;
+    }
+      @media (max-width: 770px) {
+        .id-6Z-VOYZV4-50.id-6Z-VOYZV4-50.id-6Z-VOYZV4-50 {
+      margin-top: -15px;
+    }
+      .id-6Z-VOYZV4-50.id-6Z-VOYZV4-50.id-6Z-VOYZV4-50 .elHeadline {
+      font-size: 14px;
+letter-spacing: 0.14rem;
+    }
+      
+    
+      }
+    
+ .id-6Z-VOYZV4-43.id-6Z-VOYZV4-43 {
+      padding-top: 10px;
+padding-bottom: 10px;
+    }
+      .id-6Z-VOYZV4-43.id-6Z-VOYZV4-43 .elHeadline {
+      font-family: "Poppins", sans-serif;
+font-weight: 400;
+text-align: left;
+color: rgb(7, 31, 47);
+    }
+.id-6Z-VOYZV4-43.id-6Z-VOYZV4-43 .elHeadline b,
+.id-6Z-VOYZV4-43.id-6Z-VOYZV4-43 
+.elHeadline strong {
+      color: rgb(202, 112, 122);
+    }
+      @media (max-width: 770px) {
+        .id-6Z-VOYZV4-43.id-6Z-VOYZV4-43.id-6Z-VOYZV4-43 {
+      margin-top: -15px;
+    }
+      .id-6Z-VOYZV4-43.id-6Z-VOYZV4-43.id-6Z-VOYZV4-43 .elHeadline {
+      font-size: 24px;
+    }
+      
+    
+      }
+    
+ .id-6Z-ggDJr6-15.id-6Z-ggDJr6-15 {
+      padding-top: 10px;
+padding-bottom: 10px;
+    }
+      .id-6Z-ggDJr6-15.id-6Z-ggDJr6-15 .elHeadline {
+      text-align: left;
+font-weight: 600;
+font-family: "Poppins", sans-serif;
+    }
+      @media (max-width: 770px) {
+        .id-6Z-ggDJr6-15.id-6Z-ggDJr6-15.id-6Z-ggDJr6-15 {
+      margin-top: -15px;
+    }
+      .id-6Z-ggDJr6-15.id-6Z-ggDJr6-15.id-6Z-ggDJr6-15 .elHeadline {
+      font-size: 17px;
+    }
+      
+    
+      }
+    
+ .id-6Z-VOYZV4-2082.id-6Z-VOYZV4-2082 {
+      margin-top: 25px;
+    }
+      .id-6Z-VOYZV4-2082.id-6Z-VOYZV4-2082 .elImage {
+      --style-box-shadow-distance-x: 0px;
+--style-box-shadow-distance-y: 0px;
+--style-box-shadow-blur: 3px;
+--style-box-shadow-spread: 1px;
+--style-box-shadow-color: rgba(0, 0, 0, 0.06);
+box-shadow: var(--style-box-shadow-style-type, ) var(--style-box-shadow-distance-x, 0px) var(--style-box-shadow-distance-y, 0px) var(--style-box-shadow-blur, 0px) var(--style-box-shadow-spread, 0px) var(--style-box-shadow-color, #000000);
+    }
+      @media (max-width: 770px) {
+        .id-6Z-VOYZV4-2082.id-6Z-VOYZV4-2082.id-6Z-VOYZV4-2082 {
+      margin-top: 30px;
+    }
+      }
+    
+ .id-6Z-VOYZV4-68.id-6Z-VOYZV4-68 {
+      z-index: 0;
+position: relative;
+margin-top: 10px;
+    }
+      .id-6Z-VOYZV4-68.id-6Z-VOYZV4-68 .elImage {
+      width: 100%;
+    }
+      @media (max-width: 770px) {
+        .id-6Z-VOYZV4-68.id-6Z-VOYZV4-68.id-6Z-VOYZV4-68 {
+      margin-top: 5px;
+    }
+      }
+    
+ .id-6Z-qvrazX-3.id-6Z-qvrazX-3 {
+      width: 1170px;
+    }
+      
+      @media (max-width: 770px) {
+        .id-6Z-qvrazX-3.id-6Z-qvrazX-3.id-6Z-qvrazX-3 {
+      margin-top: -35px;
+padding-left: 0px;
+padding-right: 0px;
+    }
+      }
+    
+ .id-6Z-qvrazX-5.id-6Z-qvrazX-5 {
+      z-index: 0;
+position: relative;
+    }
+      
+      @media (max-width: 770px) {
+        .id-6Z-qvrazX-5.id-6Z-qvrazX-5.id-6Z-qvrazX-5 {
+      margin-top: 5px;
+    }
+      }
+    
+ .id-6Z-qvrazX-6.id-6Z-qvrazX-6 {
+      border-style: none;
+width: 1170px;
+margin-top: -100px;
+z-index: 10;
+position: relative;
+border-radius: 0px;
+background: linear-gradient(rgb(255, 255, 255) 0%,rgb(255, 255, 255) 100%),rgb(255, 255, 255);
+border-color: rgb(255, 255, 255);
+border-width: 1px;
+    }
+      
+      @media (max-width: 770px) {
+        .id-6Z-qvrazX-6.id-6Z-qvrazX-6.id-6Z-qvrazX-6 {
+      margin-top: -80px;
+padding-bottom: 0px;
+padding-left: 0px;
+padding-right: 0px;
+    }
+      }
+    
+ .id-6Z-qvrazX-8.id-6Z-qvrazX-8 {
+      padding-top: 10px;
+padding-bottom: 10px;
+    }
+      .id-6Z-qvrazX-8.id-6Z-qvrazX-8 .elHeadline {
+      text-align: left;
+font-weight: 400;
+font-family: "Poppins", sans-serif;
+text-transform: uppercase;
+    }
+      @media (max-width: 770px) {
+        .id-6Z-qvrazX-8.id-6Z-qvrazX-8.id-6Z-qvrazX-8 {
+      margin-top: -15px;
+    }
+      .id-6Z-qvrazX-8.id-6Z-qvrazX-8.id-6Z-qvrazX-8 .elHeadline {
+      font-size: 14px;
+letter-spacing: 0.14rem;
+    }
+      
+    
+      }
+    
+ .id-6Z-qvrazX-14.id-6Z-qvrazX-14 {
+      padding-top: 10px;
+padding-bottom: 10px;
+    }
+      .id-6Z-qvrazX-14.id-6Z-qvrazX-14 .elHeadline {
+      font-family: "Poppins", sans-serif;
+font-weight: 400;
+text-align: left;
+color: rgb(7, 31, 47);
+    }
+.id-6Z-qvrazX-14.id-6Z-qvrazX-14 .elHeadline b,
+.id-6Z-qvrazX-14.id-6Z-qvrazX-14 
+.elHeadline strong {
+      color: rgb(202, 112, 122);
+    }
+      @media (max-width: 770px) {
+        .id-6Z-qvrazX-14.id-6Z-qvrazX-14.id-6Z-qvrazX-14 {
+      margin-top: -15px;
+    }
+      .id-6Z-qvrazX-14.id-6Z-qvrazX-14.id-6Z-qvrazX-14 .elHeadline {
+      font-size: 24px;
+    }
+      
+    
+      }
+    
+ .id-6Z-qvrazX-18.id-6Z-qvrazX-18 {
+      padding-top: 10px;
+padding-bottom: 10px;
+    }
+      .id-6Z-qvrazX-18.id-6Z-qvrazX-18 .elHeadline {
+      text-align: left;
+font-weight: 600;
+font-family: "Poppins", sans-serif;
+    }
+      @media (max-width: 770px) {
+        .id-6Z-qvrazX-18.id-6Z-qvrazX-18.id-6Z-qvrazX-18 {
+      margin-top: -15px;
+    }
+      .id-6Z-qvrazX-18.id-6Z-qvrazX-18.id-6Z-qvrazX-18 .elHeadline {
+      font-size: 17px;
+    }
+      
+    
+      }
+    
+ .id-6Z-qvrazX-23.id-6Z-qvrazX-23 {
+      width: 1170px;
+    }
+      
+      @media (max-width: 770px) {
+        .id-6Z-qvrazX-23.id-6Z-qvrazX-23.id-6Z-qvrazX-23 {
+      padding-top: 0px;
+padding-bottom: 0px;
+margin-top: -25px;
+padding-left: 0px;
+padding-right: 0px;
+    }
+      }
+    
+ 
+      .id-6Z-qvrazX-25.id-6Z-qvrazX-25 .elImage {
+      --style-box-shadow-distance-x: 0px;
+--style-box-shadow-distance-y: 0px;
+--style-box-shadow-blur: 3px;
+--style-box-shadow-spread: 1px;
+--style-box-shadow-color: rgba(0, 0, 0, 0.06);
+box-shadow: var(--style-box-shadow-style-type, ) var(--style-box-shadow-distance-x, 0px) var(--style-box-shadow-distance-y, 0px) var(--style-box-shadow-blur, 0px) var(--style-box-shadow-spread, 0px) var(--style-box-shadow-color, #000000);
+    }
+      @media (max-width: 770px) {
+        .id-6Z-qvrazX-25.id-6Z-qvrazX-25.id-6Z-qvrazX-25 {
+      margin-top: 30px;
+    }
+      }
+    
+ .id-6Z-VOYZV4-36.id-6Z-VOYZV4-36 {
+      padding-top: 0px;
+padding-bottom: 80px;
+    }
+      
+      @media (max-width: 770px) {
+        .id-6Z-VOYZV4-36.id-6Z-VOYZV4-36.id-6Z-VOYZV4-36 {
+      padding-top: 0px;
+padding-bottom: 100px;
+    }
+      }
+    
+ .id-6Z-VOYZV4-37.id-6Z-VOYZV4-37 {
+      width: 1170px;
+padding-top: 0px;
+    }
+      
+      @media (max-width: 770px) {
+        .id-6Z-VOYZV4-37.id-6Z-VOYZV4-37.id-6Z-VOYZV4-37 {
+      padding-top: 0px;
+padding-left: 0px;
+padding-right: 0px;
+    }
+      }
+    
+ .id-6Z-8Mke75-2.id-6Z-8Mke75-2 {
+      padding-top: 10px;
+padding-bottom: 10px;
+    }
+      .id-6Z-8Mke75-2.id-6Z-8Mke75-2 .elParagraph {
+      text-align: left;
+font-family: "Poppins", sans-serif;
+font-weight: 400;
+    }
+      @media (max-width: 770px) {
+        .id-6Z-8Mke75-2.id-6Z-8Mke75-2.id-6Z-8Mke75-2 {
+      margin-top: -10px;
+    }
+      .id-6Z-8Mke75-2.id-6Z-8Mke75-2.id-6Z-8Mke75-2 .elParagraph {
+      font-size: 15px;
+    }
+      
+    
+      }
+    
+ .id-6Z-VOYZV4-152.id-6Z-VOYZV4-152 {
+      padding-top: 10px;
+padding-bottom: 10px;
+margin-top: 20px;
+    }
+      .id-6Z-VOYZV4-152.id-6Z-VOYZV4-152 .elHeadline {
+      font-family: "Poppins", sans-serif;
+font-weight: 400;
+text-align: left;
+color: rgb(7, 31, 47);
+font-size: 34px;
+    }
+.id-6Z-VOYZV4-152.id-6Z-VOYZV4-152 .elHeadline b,
+.id-6Z-VOYZV4-152.id-6Z-VOYZV4-152 
+.elHeadline strong {
+      color: rgb(0, 0, 0);
+    }
+
+.id-6Z-VOYZV4-152.id-6Z-VOYZV4-152 .fa_prepended {
+      color: rgb(202, 112, 122);
+margin-right: 7px;
+    }
+      @media (max-width: 770px) {
+        .id-6Z-VOYZV4-152.id-6Z-VOYZV4-152.id-6Z-VOYZV4-152 {
+      margin-top: 0px;
+    }
+      .id-6Z-VOYZV4-152.id-6Z-VOYZV4-152.id-6Z-VOYZV4-152 .elHeadline {
+      font-size: 20px;
+    }
+      
+    
+      }
+    
+ .id-6Z-VOYZV4-121.id-6Z-VOYZV4-121 {
+      width: 1170px;
+border-style: solid;
+border-color: rgb(209, 209, 209);
+border-width: 1px;
+    }
+      
+      @media (max-width: 770px) {
+        .id-6Z-VOYZV4-121.id-6Z-VOYZV4-121.id-6Z-VOYZV4-121 {
+      padding-bottom: 11px;
+margin-top: -15px;
+padding-left: 13px;
+padding-right: 13px;
+    }
+      }
+    
+ .id-6Z-VOYZV4-131.id-6Z-VOYZV4-131 {
+      padding-top: 10px;
+padding-bottom: 10px;
+    }
+      .id-6Z-VOYZV4-131.id-6Z-VOYZV4-131 .elParagraph {
+      text-align: left;
+font-family: "Poppins", sans-serif;
+font-weight: 400;
+    }
+.id-6Z-VOYZV4-131.id-6Z-VOYZV4-131 .elParagraph b,
+.id-6Z-VOYZV4-131.id-6Z-VOYZV4-131 
+.elParagraph strong {
+      color: rgb(202, 112, 122);
+    }
+      @media (max-width: 770px) {
+        .id-6Z-VOYZV4-131.id-6Z-VOYZV4-131.id-6Z-VOYZV4-131 {
+      margin-top: -10px;
+    }
+      .id-6Z-VOYZV4-131.id-6Z-VOYZV4-131.id-6Z-VOYZV4-131 .elParagraph {
+      font-size: 15px;
+    }
+      
+    
+      }
+    
+ .id-6Z-VOYZV4-629.id-6Z-VOYZV4-629 {
+      width: 1170px;
+margin-top: 20px;
+padding-bottom: 0px;
+border-style: solid;
+border-color: rgb(209, 209, 209);
+border-width: 1px;
+    }
+      
+      @media (max-width: 770px) {
+        .id-6Z-VOYZV4-629.id-6Z-VOYZV4-629.id-6Z-VOYZV4-629 {
+      padding-bottom: 11px;
+margin-top: 15px;
+padding-left: 13px;
+padding-right: 13px;
+    }
+      }
+    
+ .id-6Z-VOYZV4-631.id-6Z-VOYZV4-631 {
+      padding-top: 10px;
+padding-bottom: 10px;
+    }
+      .id-6Z-VOYZV4-631.id-6Z-VOYZV4-631 .elHeadline {
+      font-family: "Poppins", sans-serif;
+font-weight: 600;
+text-align: left;
+color: rgb(202, 112, 122);
+font-size: 30px;
+    }
+.id-6Z-VOYZV4-631.id-6Z-VOYZV4-631 .elHeadline b,
+.id-6Z-VOYZV4-631.id-6Z-VOYZV4-631 
+.elHeadline strong {
+      color: rgb(0, 0, 0);
+    }
+      @media (max-width: 770px) {
+        .id-6Z-VOYZV4-631.id-6Z-VOYZV4-631.id-6Z-VOYZV4-631 {
+      margin-top: -5px;
+padding-top: 0px;
+    }
+      .id-6Z-VOYZV4-631.id-6Z-VOYZV4-631.id-6Z-VOYZV4-631 .elHeadline {
+      font-size: 18px;
+    }
+      
+    
+      }
+    
+ .id-6Z-Pg8awo-570.id-6Z-Pg8awo-570 {
+      padding-top: 10px;
+padding-bottom: 10px;
+    }
+      .id-6Z-Pg8awo-570.id-6Z-Pg8awo-570 .elParagraph {
+      text-align: left;
+font-family: "Poppins", sans-serif;
+font-weight: 400;
+    }
+      @media (max-width: 770px) {
+        .id-6Z-Pg8awo-570.id-6Z-Pg8awo-570.id-6Z-Pg8awo-570 {
+      margin-top: -5px;
+    }
+      .id-6Z-Pg8awo-570.id-6Z-Pg8awo-570.id-6Z-Pg8awo-570 .elParagraph {
+      font-size: 15px;
+    }
+      
+    
+      }
+    
+ .id-6Z-VOYZV4-670.id-6Z-VOYZV4-670 {
+      --header-background: rgb(242, 242, 242);
+--header-background-hover: rgb(242, 242, 242);
+--header-color-hover: rgb(0, 0, 0);
+--header-background-active: rgba(202, 112, 122, 0.26);
+--header-color-active: rgb(255, 255, 255);
+padding-top: 0px;
+padding-left: 0px;
+padding-right: 0px;
+    }
+      .id-6Z-VOYZV4-670.id-6Z-VOYZV4-670 .elAccordionItemHeaderText {
+      font-family: "Poppins", sans-serif;
+font-weight: 600;
+    }
+      @media (max-width: 770px) {
+        .id-6Z-VOYZV4-670.id-6Z-VOYZV4-670.id-6Z-VOYZV4-670 {
+      padding-top: 0px;
+padding-bottom: 0px;
+padding-left: 0px;
+padding-right: 0px;
+    }
+      .id-6Z-VOYZV4-670.id-6Z-VOYZV4-670.id-6Z-VOYZV4-670 [data-page-element="AccordionItem"] .elAccordionItemBody {
+      padding-left: 0px;
+padding-right: 0px;
+    }
+.id-6Z-VOYZV4-670.id-6Z-VOYZV4-670.id-6Z-VOYZV4-670 [data-page-element="AccordionItem"] .elAccordionItemHeader {
+      padding-bottom: 9px;
+padding-top: 9px;
+padding-left: 13px;
+padding-right: 13px;
+    }
+.id-6Z-VOYZV4-670.id-6Z-VOYZV4-670.id-6Z-VOYZV4-670 .elAccordionItemHeaderText {
+      font-size: 16px;
+    }
+.id-6Z-VOYZV4-670.id-6Z-VOYZV4-670.id-6Z-VOYZV4-670 [data-page-element="AccordionItem"] .elAccordionItemHeaderAfterIcon {
+      font-size: 20px;
+    }
+      
+    
+      }
+    
+ .id-6Z-VOYZV4-693.id-6Z-VOYZV4-693 {
+      padding-top: 10px;
+padding-bottom: 10px;
+    }
+      .id-6Z-VOYZV4-693.id-6Z-VOYZV4-693 .elBulletList {
+      font-family: "Poppins", sans-serif;
+font-weight: 400;
+    }
+.id-6Z-VOYZV4-693.id-6Z-VOYZV4-693 .elBulletList li:not(:first-child) {
+      margin-top: 7px;
+    }
+.id-6Z-VOYZV4-693.id-6Z-VOYZV4-693 .elBulletList .fa,
+.id-6Z-VOYZV4-693.id-6Z-VOYZV4-693 
+.elBulletList .fas,
+.id-6Z-VOYZV4-693.id-6Z-VOYZV4-693 
+.elBulletList .fa-fw {
+      color: rgb(202, 112, 122);
+    }
+.id-6Z-VOYZV4-693.id-6Z-VOYZV4-693 .elBulletList .fa_icon {
+      margin-right: 7px;
+    }
+      @media (max-width: 770px) {
+        .id-6Z-VOYZV4-693.id-6Z-VOYZV4-693.id-6Z-VOYZV4-693 {
+      padding-top: 0px;
+margin-top: 5px;
+    }
+      .id-6Z-VOYZV4-693.id-6Z-VOYZV4-693.id-6Z-VOYZV4-693 .elBulletList {
+      font-size: 15px;
+    }
+      
+    
+      }
+    
+ .id-6Z-VOYZV4-672.id-6Z-VOYZV4-672 {
+      padding-top: 10px;
+padding-bottom: 10px;
+    }
+      .id-6Z-VOYZV4-672.id-6Z-VOYZV4-672 .elParagraph {
+      text-align: left;
+font-family: "Poppins", sans-serif;
+font-weight: 400;
+    }
+      @media (max-width: 770px) {
+        .id-6Z-VOYZV4-672.id-6Z-VOYZV4-672.id-6Z-VOYZV4-672 {
+      margin-top: -5px;
+    }
+      .id-6Z-VOYZV4-672.id-6Z-VOYZV4-672.id-6Z-VOYZV4-672 .elParagraph {
+      font-size: 15px;
+    }
+      
+    
+      }
+    
+ .id-6Z-VOYZV4-875.id-6Z-VOYZV4-875 {
+      width: 1170px;
+margin-top: 20px;
+border-style: solid;
+border-color: rgb(209, 209, 209);
+border-width: 1px;
+    }
+      
+      @media (max-width: 770px) {
+        .id-6Z-VOYZV4-875.id-6Z-VOYZV4-875.id-6Z-VOYZV4-875 {
+      padding-bottom: 11px;
+margin-top: 15px;
+padding-left: 13px;
+padding-right: 13px;
+    }
+      }
+    
+ .id-6Z-VOYZV4-877.id-6Z-VOYZV4-877 {
+      padding-top: 10px;
+padding-bottom: 10px;
+    }
+      .id-6Z-VOYZV4-877.id-6Z-VOYZV4-877 .elHeadline {
+      font-family: "Poppins", sans-serif;
+font-weight: 600;
+text-align: left;
+color: rgb(202, 112, 122);
+font-size: 30px;
+    }
+.id-6Z-VOYZV4-877.id-6Z-VOYZV4-877 .elHeadline b,
+.id-6Z-VOYZV4-877.id-6Z-VOYZV4-877 
+.elHeadline strong {
+      color: rgb(0, 0, 0);
+    }
+      @media (max-width: 770px) {
+        .id-6Z-VOYZV4-877.id-6Z-VOYZV4-877.id-6Z-VOYZV4-877 {
+      margin-top: -5px;
+padding-top: 0px;
+    }
+      .id-6Z-VOYZV4-877.id-6Z-VOYZV4-877.id-6Z-VOYZV4-877 .elHeadline {
+      font-size: 18px;
+    }
+      
+    
+      }
+    
+ .id-6Z-VOYZV4-881.id-6Z-VOYZV4-881 {
+      padding-top: 10px;
+padding-bottom: 10px;
+    }
+      .id-6Z-VOYZV4-881.id-6Z-VOYZV4-881 .elParagraph {
+      text-align: left;
+font-family: "Poppins", sans-serif;
+font-weight: 400;
+    }
+      @media (max-width: 770px) {
+        .id-6Z-VOYZV4-881.id-6Z-VOYZV4-881.id-6Z-VOYZV4-881 {
+      margin-top: -10px;
+    }
+      .id-6Z-VOYZV4-881.id-6Z-VOYZV4-881.id-6Z-VOYZV4-881 .elParagraph {
+      font-size: 15px;
+    }
+      
+    
+      }
+    
+ .id-6Z-VOYZV4-1444.id-6Z-VOYZV4-1444 {
+      width: 1170px;
+    }
+      
+      @media (max-width: 770px) {
+        .id-6Z-VOYZV4-1444.id-6Z-VOYZV4-1444.id-6Z-VOYZV4-1444 {
+      margin-top: 15px;
+padding-bottom: 4px;
+padding-left: 0px;
+padding-right: 0px;
+    }
+      }
+    
+ .id-6Z-Pg8awo-1130.id-6Z-Pg8awo-1130 {
+      padding-top: 10px;
+padding-bottom: 10px;
+margin-top: 10px;
+    }
+      .id-6Z-Pg8awo-1130.id-6Z-Pg8awo-1130 .elHeadline {
+      font-family: "Poppins", sans-serif;
+font-weight: 400;
+text-align: left;
+color: rgb(7, 31, 47);
+font-size: 34px;
+    }
+.id-6Z-Pg8awo-1130.id-6Z-Pg8awo-1130 .elHeadline b,
+.id-6Z-Pg8awo-1130.id-6Z-Pg8awo-1130 
+.elHeadline strong {
+      color: rgb(0, 0, 0);
+    }
+.id-6Z-Pg8awo-1130.id-6Z-Pg8awo-1130 .fa_prepended {
+      margin-right: 7px;
+color: rgb(202, 112, 122);
+    }
+      @media (max-width: 770px) {
+        .id-6Z-Pg8awo-1130.id-6Z-Pg8awo-1130.id-6Z-Pg8awo-1130 {
+      margin-top: -20px;
+    }
+      .id-6Z-Pg8awo-1130.id-6Z-Pg8awo-1130.id-6Z-Pg8awo-1130 .elHeadline {
+      font-size: 20px;
+    }
+      
+    
+      }
+    
+ .id-6Z-Pg8awo-1766.id-6Z-Pg8awo-1766 {
+      padding-top: 10px;
+padding-bottom: 10px;
+    }
+      .id-6Z-Pg8awo-1766.id-6Z-Pg8awo-1766 .elParagraph {
+      text-align: left;
+font-family: "Poppins", sans-serif;
+font-weight: 400;
+    }
+      @media (max-width: 770px) {
+        .id-6Z-Pg8awo-1766.id-6Z-Pg8awo-1766.id-6Z-Pg8awo-1766 {
+      margin-top: -10px;
+    }
+      .id-6Z-Pg8awo-1766.id-6Z-Pg8awo-1766.id-6Z-Pg8awo-1766 .elParagraph {
+      font-size: 15px;
+    }
+      
+    
+      }
+    
+ .id-6Z-Pg8awo-1435.id-6Z-Pg8awo-1435 {
+      padding-top: 10px;
+padding-bottom: 10px;
+    }
+      .id-6Z-Pg8awo-1435.id-6Z-Pg8awo-1435 .elBulletList {
+      font-family: "Poppins", sans-serif;
+font-weight: 400;
+    }
+.id-6Z-Pg8awo-1435.id-6Z-Pg8awo-1435 .elBulletList li:not(:first-child) {
+      margin-top: 7px;
+    }
+.id-6Z-Pg8awo-1435.id-6Z-Pg8awo-1435 .elBulletList .fa,
+.id-6Z-Pg8awo-1435.id-6Z-Pg8awo-1435 
+.elBulletList .fas,
+.id-6Z-Pg8awo-1435.id-6Z-Pg8awo-1435 
+.elBulletList .fa-fw {
+      color: rgb(202, 112, 122);
+    }
+.id-6Z-Pg8awo-1435.id-6Z-Pg8awo-1435 .elBulletList .fa_icon {
+      margin-right: 5px;
+    }
+      @media (max-width: 770px) {
+        .id-6Z-Pg8awo-1435.id-6Z-Pg8awo-1435.id-6Z-Pg8awo-1435 {
+      padding-top: 0px;
+margin-top: 5px;
+    }
+      .id-6Z-Pg8awo-1435.id-6Z-Pg8awo-1435.id-6Z-Pg8awo-1435 .elBulletList {
+      font-size: 15px;
+    }
+      
+    
+      }
+    
+ .id-6Z-Pg8awo-1138.id-6Z-Pg8awo-1138 {
+      padding-top: 10px;
+padding-bottom: 10px;
+    }
+      .id-6Z-Pg8awo-1138.id-6Z-Pg8awo-1138 .elParagraph {
+      text-align: left;
+font-family: "Poppins", sans-serif;
+font-weight: 400;
+    }
+      @media (max-width: 770px) {
+        .id-6Z-Pg8awo-1138.id-6Z-Pg8awo-1138.id-6Z-Pg8awo-1138 {
+      margin-top: -10px;
+    }
+      .id-6Z-Pg8awo-1138.id-6Z-Pg8awo-1138.id-6Z-Pg8awo-1138 .elParagraph {
+      font-size: 15px;
+    }
+      
+    
+      }
+    
+ .id-6Z-VOYZV4-123.id-6Z-VOYZV4-123 {
+      padding-top: 10px;
+padding-bottom: 10px;
+margin-top: 20px;
+    }
+      .id-6Z-VOYZV4-123.id-6Z-VOYZV4-123 .elHeadline {
+      font-family: "Poppins", sans-serif;
+font-weight: 400;
+text-align: left;
+color: rgb(7, 31, 47);
+font-size: 34px;
+    }
+.id-6Z-VOYZV4-123.id-6Z-VOYZV4-123 .elHeadline b,
+.id-6Z-VOYZV4-123.id-6Z-VOYZV4-123 
+.elHeadline strong {
+      color: rgb(0, 0, 0);
+    }
+.id-6Z-VOYZV4-123.id-6Z-VOYZV4-123 .fa_prepended {
+      margin-right: 7px;
+color: rgb(202, 112, 122);
+    }
+      @media (max-width: 770px) {
+        .id-6Z-VOYZV4-123.id-6Z-VOYZV4-123.id-6Z-VOYZV4-123 {
+      margin-top: 5px;
+    }
+      .id-6Z-VOYZV4-123.id-6Z-VOYZV4-123.id-6Z-VOYZV4-123 .elHeadline {
+      font-size: 20px;
+    }
+      
+    
+      }
+    
+ .id-6Z-VOYZV4-2083.id-6Z-VOYZV4-2083 {
+      padding-top: 10px;
+padding-bottom: 10px;
+    }
+      .id-6Z-VOYZV4-2083.id-6Z-VOYZV4-2083 .elBulletList {
+      font-family: "Poppins", sans-serif;
+font-weight: 400;
+    }
+.id-6Z-VOYZV4-2083.id-6Z-VOYZV4-2083 .elBulletList li:not(:first-child) {
+      margin-top: 7px;
+    }
+.id-6Z-VOYZV4-2083.id-6Z-VOYZV4-2083 .elBulletList .fa,
+.id-6Z-VOYZV4-2083.id-6Z-VOYZV4-2083 
+.elBulletList .fas,
+.id-6Z-VOYZV4-2083.id-6Z-VOYZV4-2083 
+.elBulletList .fa-fw {
+      color: rgb(202, 112, 122);
+    }
+.id-6Z-VOYZV4-2083.id-6Z-VOYZV4-2083 .elBulletList .fa_icon {
+      margin-right: 5px;
+    }
+      @media (max-width: 770px) {
+        .id-6Z-VOYZV4-2083.id-6Z-VOYZV4-2083.id-6Z-VOYZV4-2083 {
+      padding-top: 0px;
+margin-top: 5px;
+    }
+      .id-6Z-VOYZV4-2083.id-6Z-VOYZV4-2083.id-6Z-VOYZV4-2083 .elBulletList {
+      font-size: 15px;
+    }
+      
+    
+      }
+    
+ .id-6Z-VOYZV4-77.id-6Z-VOYZV4-77 {
+      text-align: left;
+    }
+      .id-6Z-VOYZV4-77.id-6Z-VOYZV4-77 .elImage {
+      width: 55%;
+--style-box-shadow-distance-x: 0px;
+--style-box-shadow-distance-y: 0px;
+--style-box-shadow-blur: 3px;
+--style-box-shadow-spread: 1px;
+--style-box-shadow-color: rgba(0, 0, 0, 0.06);
+box-shadow: var(--style-box-shadow-style-type, ) var(--style-box-shadow-distance-x, 0px) var(--style-box-shadow-distance-y, 0px) var(--style-box-shadow-blur, 0px) var(--style-box-shadow-spread, 0px) var(--style-box-shadow-color, #000000);
+    }
+      @media (max-width: 770px) {
+        .id-6Z-VOYZV4-77.id-6Z-VOYZV4-77.id-6Z-VOYZV4-77 {
+      margin-top: 10px;
+padding-bottom: 18px;
+    }
+      .id-6Z-VOYZV4-77.id-6Z-VOYZV4-77.id-6Z-VOYZV4-77 .elImage {
+      width: 100%;
+    }
+      
+    
+      }
+    
+ .id-6Z-VOYZV4-2032.id-6Z-VOYZV4-2032 {
+      width: 1170px;
+border-style: none;
+padding-top: 0px;
+padding-bottom: 0px;
+border-color: rgb(209, 209, 209);
+border-width: 1px;
+    }
+      
+      @media (max-width: 770px) {
+        .id-6Z-VOYZV4-2032.id-6Z-VOYZV4-2032.id-6Z-VOYZV4-2032 {
+      padding-bottom: 11px;
+margin-top: 0px;
+padding-left: 0px;
+padding-right: 0px;
+    }
+      }
+    
+ .id-6Z-VOYZV4-2034.id-6Z-VOYZV4-2034 {
+      --header-background: rgb(242, 242, 242);
+--header-background-hover: rgb(242, 242, 242);
+--header-color-hover: rgb(0, 0, 0);
+--header-background-active: rgba(202, 112, 122, 0.26);
+--header-color-active: rgb(0, 0, 0);
+padding-left: 0px;
+padding-right: 0px;
+    }
+      .id-6Z-VOYZV4-2034.id-6Z-VOYZV4-2034 .elAccordionItemHeaderText {
+      font-family: "Poppins", sans-serif;
+font-weight: 600;
+    }
+      @media (max-width: 770px) {
+        .id-6Z-VOYZV4-2034.id-6Z-VOYZV4-2034.id-6Z-VOYZV4-2034 {
+      padding-top: 0px;
+padding-bottom: 0px;
+padding-left: 0px;
+padding-right: 0px;
+    }
+      .id-6Z-VOYZV4-2034.id-6Z-VOYZV4-2034.id-6Z-VOYZV4-2034 [data-page-element="AccordionItem"] .elAccordionItemBody {
+      padding-left: 0px;
+padding-right: 0px;
+    }
+.id-6Z-VOYZV4-2034.id-6Z-VOYZV4-2034.id-6Z-VOYZV4-2034 [data-page-element="AccordionItem"] .elAccordionItemHeader {
+      padding-bottom: 9px;
+padding-top: 9px;
+padding-left: 13px;
+padding-right: 13px;
+    }
+.id-6Z-VOYZV4-2034.id-6Z-VOYZV4-2034.id-6Z-VOYZV4-2034 .elAccordionItemHeaderText {
+      font-size: 16px;
+    }
+.id-6Z-VOYZV4-2034.id-6Z-VOYZV4-2034.id-6Z-VOYZV4-2034 [data-page-element="AccordionItem"] .elAccordionItemHeaderAfterIcon {
+      font-size: 20px;
+    }
+      
+    
+      }
+    
+ .id-6Z-VOYZV4-2038.id-6Z-VOYZV4-2038 {
+      padding-top: 10px;
+padding-bottom: 10px;
+    }
+      .id-6Z-VOYZV4-2038.id-6Z-VOYZV4-2038 .elBulletList {
+      font-family: "Poppins", sans-serif;
+font-weight: 400;
+    }
+.id-6Z-VOYZV4-2038.id-6Z-VOYZV4-2038 .elBulletList .fa,
+.id-6Z-VOYZV4-2038.id-6Z-VOYZV4-2038 
+.elBulletList .fas,
+.id-6Z-VOYZV4-2038.id-6Z-VOYZV4-2038 
+.elBulletList .fa-fw {
+      color: rgb(202, 112, 122);
+    }
+      @media (max-width: 770px) {
+        
+      .id-6Z-VOYZV4-2038.id-6Z-VOYZV4-2038.id-6Z-VOYZV4-2038 .elBulletList {
+      font-size: 15px;
+    }
+      
+    
+      }
+    
+ .id-6Z-VOYZV4-1953.id-6Z-VOYZV4-1953 {
+      width: 1170px;
+border-style: none;
+padding-top: 0px;
+padding-bottom: 0px;
+margin-top: -30px;
+border-color: rgb(209, 209, 209);
+border-width: 1px;
+    }
+      
+      @media (max-width: 770px) {
+        .id-6Z-VOYZV4-1953.id-6Z-VOYZV4-1953.id-6Z-VOYZV4-1953 {
+      padding-bottom: 11px;
+margin-top: 0px;
+padding-top: 0px;
+padding-left: 0px;
+padding-right: 0px;
+    }
+      }
+    
+ .id-6Z-VOYZV4-1955.id-6Z-VOYZV4-1955 {
+      --header-background: rgb(242, 242, 242);
+--header-background-hover: rgb(242, 242, 242);
+--header-color-hover: rgb(0, 0, 0);
+--header-background-active: rgba(202, 112, 122, 0.26);
+--header-color-active: rgb(0, 0, 0);
+padding-left: 0px;
+padding-right: 0px;
+    }
+      .id-6Z-VOYZV4-1955.id-6Z-VOYZV4-1955 .elAccordionItemHeaderText {
+      font-family: "Poppins", sans-serif;
+font-weight: 600;
+    }
+      @media (max-width: 770px) {
+        .id-6Z-VOYZV4-1955.id-6Z-VOYZV4-1955.id-6Z-VOYZV4-1955 {
+      padding-top: 0px;
+padding-bottom: 0px;
+padding-left: 0px;
+padding-right: 0px;
+    }
+      .id-6Z-VOYZV4-1955.id-6Z-VOYZV4-1955.id-6Z-VOYZV4-1955 [data-page-element="AccordionItem"] .elAccordionItemBody {
+      padding-left: 0px;
+padding-right: 0px;
+    }
+.id-6Z-VOYZV4-1955.id-6Z-VOYZV4-1955.id-6Z-VOYZV4-1955 [data-page-element="AccordionItem"] .elAccordionItemHeader {
+      padding-bottom: 9px;
+padding-top: 9px;
+padding-left: 13px;
+padding-right: 13px;
+    }
+.id-6Z-VOYZV4-1955.id-6Z-VOYZV4-1955.id-6Z-VOYZV4-1955 .elAccordionItemHeaderText {
+      font-size: 16px;
+    }
+.id-6Z-VOYZV4-1955.id-6Z-VOYZV4-1955.id-6Z-VOYZV4-1955 [data-page-element="AccordionItem"] .elAccordionItemHeaderAfterIcon {
+      font-size: 20px;
+    }
+      
+    
+      }
+    
+ .id-6Z-Pg8awo-1625.id-6Z-Pg8awo-1625 {
+      padding-top: 10px;
+padding-bottom: 10px;
+    }
+      .id-6Z-Pg8awo-1625.id-6Z-Pg8awo-1625 .elParagraph {
+      text-align: left;
+font-family: "Poppins", sans-serif;
+font-weight: 400;
+    }
+      @media (max-width: 770px) {
+        .id-6Z-Pg8awo-1625.id-6Z-Pg8awo-1625.id-6Z-Pg8awo-1625 {
+      margin-top: 0px;
+    }
+      .id-6Z-Pg8awo-1625.id-6Z-Pg8awo-1625.id-6Z-Pg8awo-1625 .elParagraph {
+      font-size: 15px;
+    }
+      
+    
+      }
+    
+ .id-6Z-VOYZV4-1818.id-6Z-VOYZV4-1818 {
+      width: 1170px;
+border-style: none;
+padding-top: 0px;
+padding-bottom: 0px;
+margin-top: -30px;
+border-color: rgb(209, 209, 209);
+border-width: 1px;
+    }
+      
+      @media (max-width: 770px) {
+        .id-6Z-VOYZV4-1818.id-6Z-VOYZV4-1818.id-6Z-VOYZV4-1818 {
+      padding-bottom: 11px;
+margin-top: 0px;
+padding-top: 0px;
+padding-left: 0px;
+padding-right: 0px;
+    }
+      }
+    
+ .id-6Z-VOYZV4-1844.id-6Z-VOYZV4-1844 {
+      --header-background: rgb(242, 242, 242);
+--header-background-hover: rgb(242, 242, 242);
+--header-color-hover: rgb(0, 0, 0);
+--header-background-active: rgba(202, 112, 122, 0.26);
+--header-color-active: rgb(0, 0, 0);
+padding-left: 0px;
+padding-right: 0px;
+    }
+      .id-6Z-VOYZV4-1844.id-6Z-VOYZV4-1844 .elAccordionItemHeaderText {
+      font-family: "Poppins", sans-serif;
+font-weight: 600;
+    }
+      @media (max-width: 770px) {
+        .id-6Z-VOYZV4-1844.id-6Z-VOYZV4-1844.id-6Z-VOYZV4-1844 {
+      padding-top: 0px;
+padding-bottom: 0px;
+padding-left: 0px;
+padding-right: 0px;
+    }
+      .id-6Z-VOYZV4-1844.id-6Z-VOYZV4-1844.id-6Z-VOYZV4-1844 [data-page-element="AccordionItem"] .elAccordionItemBody {
+      padding-left: 0px;
+padding-right: 0px;
+    }
+.id-6Z-VOYZV4-1844.id-6Z-VOYZV4-1844.id-6Z-VOYZV4-1844 [data-page-element="AccordionItem"] .elAccordionItemHeader {
+      padding-bottom: 9px;
+padding-top: 9px;
+padding-left: 13px;
+padding-right: 13px;
+    }
+.id-6Z-VOYZV4-1844.id-6Z-VOYZV4-1844.id-6Z-VOYZV4-1844 .elAccordionItemHeaderText {
+      font-size: 16px;
+    }
+.id-6Z-VOYZV4-1844.id-6Z-VOYZV4-1844.id-6Z-VOYZV4-1844 [data-page-element="AccordionItem"] .elAccordionItemHeaderAfterIcon {
+      font-size: 20px;
+    }
+      
+    
+      }
+    
+ .id-6Z-VOYZV4-1895.id-6Z-VOYZV4-1895 {
+      padding-top: 10px;
+padding-bottom: 10px;
+    }
+      .id-6Z-VOYZV4-1895.id-6Z-VOYZV4-1895 .elBulletList {
+      font-family: "Poppins", sans-serif;
+font-weight: 400;
+    }
+.id-6Z-VOYZV4-1895.id-6Z-VOYZV4-1895 .elBulletList .fa,
+.id-6Z-VOYZV4-1895.id-6Z-VOYZV4-1895 
+.elBulletList .fas,
+.id-6Z-VOYZV4-1895.id-6Z-VOYZV4-1895 
+.elBulletList .fa-fw {
+      color: rgb(202, 112, 122);
+    }
+      @media (max-width: 770px) {
+        
+      .id-6Z-VOYZV4-1895.id-6Z-VOYZV4-1895.id-6Z-VOYZV4-1895 .elBulletList {
+      font-size: 15px;
+    }
+      
+    
+      }
+    
+ .id-6Z-Pg8awo-1837.id-6Z-Pg8awo-1837 {
+      padding-top: 10px;
+padding-bottom: 10px;
+    }
+      .id-6Z-Pg8awo-1837.id-6Z-Pg8awo-1837 .elParagraph {
+      text-align: left;
+font-family: "Poppins", sans-serif;
+font-weight: 400;
+    }
+      @media (max-width: 770px) {
+        .id-6Z-Pg8awo-1837.id-6Z-Pg8awo-1837.id-6Z-Pg8awo-1837 {
+      margin-top: 0px;
+    }
+      .id-6Z-Pg8awo-1837.id-6Z-Pg8awo-1837.id-6Z-Pg8awo-1837 .elParagraph {
+      font-size: 15px;
+    }
+      
+    
+      }
+    
+ .id-6Z-bYwWKG-52.id-6Z-bYwWKG-52 {
+      padding-bottom: 0px;
+padding-top: 0px;
+margin-top: 0px;
+background: rgb(41, 44, 47);
+    }
+      
+      @media (max-width: 770px) {
+        .id-6Z-bYwWKG-52.id-6Z-bYwWKG-52.id-6Z-bYwWKG-52 {
+      padding-top: 9px;
+    }
+      }
+    
+ .id-6Z-bYwWKG-53.id-6Z-bYwWKG-53 {
+      width: 1170px;
+padding-top: 0px;
+padding-bottom: 10px;
+padding-left: 0px;
+padding-right: 0px;
+    }
+      .id-6Z-bYwWKG-53.id-6Z-bYwWKG-53 .col-inner {
+      height: auto;
+    }
+      @media (max-width: 770px) {
+        .id-6Z-bYwWKG-53.id-6Z-bYwWKG-53.id-6Z-bYwWKG-53 {
+      padding-top: 3px;
+padding-bottom: 5px;
+    }
+      }
+    
+ .id-6Z-OX8vj9-5.id-6Z-OX8vj9-5 {
+      margin-top: 10px;
+    }
+      .id-6Z-OX8vj9-5.id-6Z-OX8vj9-5 .elButton {
+      width: 100%;
+padding-top: 15px;
+padding-bottom: 15px;
+background: rgb(202, 112, 122);
+    }
+.id-6Z-OX8vj9-5.id-6Z-OX8vj9-5 .fa_prepended {
+      margin-left: 0px;
+margin-right: 5px;
+    }
+.id-6Z-OX8vj9-5.id-6Z-OX8vj9-5 .elButton .elButtonText {
+      font-weight: 600;
+font-family: "Poppins", sans-serif;
+    }
+.id-6Z-OX8vj9-5.id-6Z-OX8vj9-5 .elButton:hover,
+.id-6Z-OX8vj9-5.id-6Z-OX8vj9-5 
+.elButton.elButtonHovered {
+      background: rgb(100, 127, 172);
+    }
+.id-6Z-OX8vj9-5.id-6Z-OX8vj9-5 .elButton:active,
+.id-6Z-OX8vj9-5.id-6Z-OX8vj9-5 
+.elButton.elButtonActive {
+      background: rgb(100, 127, 172);
+    }
+      @media (max-width: 770px) {
+        
+      .id-6Z-OX8vj9-5.id-6Z-OX8vj9-5.id-6Z-OX8vj9-5 .elButton .elButtonText {
+      font-size: 17px;
+    }
+      
+    
+      }
+    
+    </style><style id="resource-config" type="text/css">
+      
+    </style><style id="custom-css">
+        
+      </style><style id="custom-fonts">
+      
+    </style><style>
+    #IntercomDefaultWidget {
+      display:none;
+    }
+    .selectAW-date-demo, .elTicketAddToCalendar, .elTicketAddToCalendarV2 {
+      display:none;
+    }
+  </style></head><body><div class="elPageContent">
+<div data-page-element="ContentNode" class="pageRoot id-6Z-pMkKXq-0" data-slot-name="default"><div data-page-element="SectionContainer/V1" class="container fullContainer id-6Z-qvrazX-2" data-paint-colors="lightest" data-show-only="mobile"><div class="containerInnerV2"><div data-page-element="RowContainer/V1" class="row id-6Z-qvrazX-3" data-slot-name="default"><div data-page-element="ColContainer/V1" class="col-md-12 innerContent col_left  id-6Z-qvrazX-4"><div class="col-inner"><div data-page-element="Image/V2" class="elImageWrapper de-image-block id-6Z-qvrazX-5" data-liquid-replace="item"><img class="elImage" src="assets/23.jpg" alt="Beauty Restart – nahahoolduse ja mineraalkosmeetika konsultatsioon" data-style-guide-corner="style2" width="1536" height="1024" /></div></div></div></div><div data-page-element="RowContainer/V1" class="row bgCoverCenter id-6Z-qvrazX-6" data-style-guide-corner="style2" data-slot-name="default"><div data-page-element="ColContainer/V1" class="col-md-12 innerContent col_left  id-6Z-qvrazX-7"><div class="col-inner"><div data-page-element="Headline/V1" class="elHeadlineWrapper id-6Z-qvrazX-8"><h1 class="elHeadline" data-style-guide-headline="s"><span><span data-page-element="ContentEditableNode" class="ne id-6Z-qvrazX-9" data-align-selector=".elHeadline" data-slot-name="default">FBH Rewards preemia</span></span></h1></div><div data-page-element="Headline/V1" class="elHeadlineWrapper id-6Z-qvrazX-14"><h1 class="elHeadline" data-style-guide-headline="m"><span><span data-page-element="ContentEditableNode" class="ne id-6Z-qvrazX-15" data-align-selector=".elHeadline" data-slot-name="default"><b>Beauty Restart</b></span></span></h1></div><div data-page-element="Headline/V1" class="elHeadlineWrapper id-6Z-qvrazX-18"><h1 class="elHeadline" data-style-guide-headline="s"><span><span data-page-element="ContentEditableNode" class="ne id-6Z-qvrazX-19" data-align-selector=".elHeadline" data-slot-name="default">Nahahoolduse ja mineraalkosmeetika konsultatsioon</span></span></h1></div></div></div></div></div></div><div data-page-element="SectionContainer/V1" class="container fullContainer id-6Z-VOYZV4-36" data-paint-colors="lightest"><div class="containerInnerV2"><div data-page-element="RowContainer/V1" class="row id-6Z-VOYZV4-37" data-slot-name="default"><div data-page-element="ColContainer/V1" class="col-md-12 innerContent col_left  id-6Z-VOYZV4-38"><div class="col-inner"><div data-page-element="Paragraph/V1" class="elParagraphWrapper id-6Z-8Mke75-2"><p class="elParagraph" data-style-guide-content="m"><span><span data-page-element="ContentEditableNode" class="ne id-6Z-8Mke75-3" data-align-selector=".elParagraph" data-slot-name="default"><b>Valitud Sinu nahale. Spetsialisti soovitustega.</b><br/>20 punkti · 90 min · Väärtus 45 €<br/><br/>Beauty Restart on personaalne näohoolduse ja mineraalkosmeetika konsultatsioon, mis lähtub Sinu nahatüübist, eesmärkidest, eelistustest ja naha hetkevajadustest.<br/><br/>Koos spetsialistiga leiame nahahooldus- ja mineraalkosmeetikatooted, mis sobivad just Sinu nahale ning toetavad soovitud tulemusi.<br/><br/>Eesmärk ei ole lihtsalt toodete valimine. Soovime aidata Sul mõista, mis Sinu nahale tegelikult sobib, et igapäevane ilurutiin oleks lihtsam, tõhusam ja nauditavam.</span></span></p></div><div data-page-element="Button/V1" class="elBTN id-6Z-OX8vj9-5 brCta" data-liquid-replace="item"><a target="_self" href="https://salonlife.com/et/nanoasia-3958/book" class="elButton" data-style-guide-button="style1" rel="noopener"><span class="elButtonMain"><i class="fas fa-spinner fa-spin elButtonSpinner elButtonText"></i><span class="elButtonMainText elButtonText"><i class="fa-fw fa_icon fas fa-pencil-alt fa_prepended"></i>Broneeri Beauty Restart</span></span><span class="elButtonSub"></span></a></div><div data-page-element="Headline/V1" class="elHeadlineWrapper id-6Z-VOYZV4-152"><h1 class="elHeadline" data-style-guide-headline="m"><i data-page-element="IconNode" class="fa-fw fa_icon fa_prepended id-IconNode fas fa-boxes"></i><span><span data-page-element="ContentEditableNode" class="ne id-6Z-VOYZV4-153" data-align-selector=".elHeadline" data-slot-name="default"><b>Mida Beauty Restart sisaldab?</b></span></span></h1></div></div></div></div><div data-page-element="RowContainer/V1" class="row id-6Z-VOYZV4-121" data-style-guide-corner="style2" data-slot-name="default"><div data-page-element="ColContainer/V1" class="col-md-12 innerContent col_left  id-6Z-VOYZV4-122"><div class="col-inner"><div data-page-element="Paragraph/V1" class="elParagraphWrapper id-6Z-VOYZV4-131"><p class="elParagraph" data-style-guide-content="m"><span><span data-page-element="ContentEditableNode" class="ne id-6Z-VOYZV4-132" data-align-selector=".elParagraph" data-slot-name="default">See on personaalne kohtumine spetsialistiga, kus saad proovida tooteid ja leida enda nahale sobivad lahendused.<br/><br/><b>Personaalne konsultatsioon</b><br/>Arvestame Sinu nahatüüpi, ilueesmärke, eelistusi ja naha hetkevajadusi.<br/><br/><b>Nahahooldustoodete valik</b><br/>Koos spetsialistiga leiame Sulle sobivad nahahooldustooted ning tutvume erinevate tekstuuridega.<br/><br/><b>Mineraalkosmeetika valik</b><br/>Valime Sinu jumega sobivad toonid ja mineraalkosmeetikatooted.<br/><br/><b>Praktiline proovimine</b><br/>Testime tooteid otse Sinu nahal. Spetsialist kannab hooldus- ja mineraalkosmeetikatooted Sinu nahale, et näeksid tulemust iseenda peal.</span></span></p></div></div></div></div><div data-page-element="RowContainer/V1" class="row id-6Z-VOYZV4-629" data-style-guide-corner="style2" data-slot-name="default"><div data-page-element="ColContainer/V1" class="col-md-12 innerContent col_left  id-6Z-VOYZV4-630"><div class="col-inner"><div data-page-element="Headline/V1" class="elHeadlineWrapper id-6Z-VOYZV4-631"><h1 class="elHeadline" data-style-guide-headline="m"><span><span data-page-element="ContentEditableNode" class="ne id-6Z-VOYZV4-632" data-align-selector=".elHeadline" data-slot-name="default">Mis Sind kohtumisel ootab?</span></span></h1></div><div data-page-element="Paragraph/V1" class="elParagraphWrapper id-6Z-Pg8awo-570"><p class="elParagraph" data-style-guide-content="m"><span><span data-page-element="ContentEditableNode" class="ne id-6Z-Pg8awo-571" data-align-selector=".elParagraph" data-slot-name="default">Beauty Restart algab Sinu naha tegelikest vajadustest ja eesmärkidest.<br/><br/>Koos spetsialistiga tutvud professionaalsete nahahooldustoodetega ning õpid valima just Sulle sobivaid tekstuure ja mineraaljumestuse toone.</span></span></p></div><div data-page-element="Accordion/V1" class="id-6Z-VOYZV4-670"><div class="elAccordionWrapper"><div data-page-element="AccordionItem" data-header-state="default" data-liquid-replace="item" class="id-6Z-VOYZV4-671"><div class="elAccordionItemHeader"><div class="elAccordionItemHeaderTextWrapper"><span class="elAccordionItemHeaderText"><span data-page-element="ContentEditableNode" class="ne id-6Z-VOYZV4-728" data-align-selector=".elAccordionItemHeaderText" data-slot-name="default">Konsultatsiooni käigus:</span></span></div><div class="elAccordionItemHeaderAfterIcon"><i class="fas fa-angle-right"></i></div></div><div class="elAccordionItemBody"><div data-page-element="BulletList/V1" class="elBullet id-6Z-VOYZV4-693"><ul class="ne elBulletList elBulletLisNew elBulletList2" data-style-guide-content="m"><span data-page-element="ContentEditableNode" class="ne id-6Z-VOYZV4-694" data-align-selector=".elBulletList li" data-slot-name="default"><li><i data-page-element="IconNode" class="fa-fw fa_icon fa fa-check" contenteditable="false"></i><span class="elBulletListTextWrapper">räägime Sinu naha hetkeseisundist ja soovidest;</span></li><li><i data-page-element="IconNode" class="fa-fw fa_icon fa fa-check" contenteditable="false"></i><span class="elBulletListTextWrapper">valime sobivad nahahooldus- ja mineraalkosmeetikatooted;</span></li><li><i data-page-element="IconNode" class="fa-fw fa_icon fa fa-check" contenteditable="false"></i><span class="elBulletListTextWrapper">proovime tooteid otse Sinu nahal;</span></li><li><i data-page-element="IconNode" class="fa-fw fa_icon fa fa-check" contenteditable="false"></i><span class="elBulletListTextWrapper">leiame Sinu jumega sobivad toonid;</span></li><li><i data-page-element="IconNode" class="fa-fw fa_icon fa fa-check" contenteditable="false"></i><span class="elBulletListTextWrapper">vaatame, kuidas valitud tooted võiksid sobituda Sinu igapäevasesse ilurutiini.</span></li></span></ul></div><div data-page-element="Paragraph/V1" class="elParagraphWrapper id-6Z-VOYZV4-672"><p class="elParagraph" data-style-guide-content="m"><span><span data-page-element="ContentEditableNode" class="ne id-6Z-VOYZV4-673" data-align-selector=".elParagraph" data-slot-name="default">Meie eesmärk on, et lahkuksid kohtumiselt selgema arusaamaga oma naha vajadustest ja sobivatest hooldusvõimalustest.</span></span></p></div></div></div></div></div></div></div></div><div data-page-element="RowContainer/V1" class="row id-6Z-VOYZV4-1444" data-slot-name="default"><div data-page-element="ColContainer/V1" class="col-md-12 innerContent col_left  id-6Z-VOYZV4-1445"><div class="col-inner"><div data-page-element="Headline/V1" class="elHeadlineWrapper id-6Z-Pg8awo-1130"><h1 class="elHeadline" data-style-guide-headline="m"><i data-page-element="IconNode" class="fa-fw fa_icon fa_prepended id-IconNode fas fa-check-circle"></i><span><span data-page-element="ContentEditableNode" class="ne id-6Z-Pg8awo-1131" data-align-selector=".elHeadline" data-slot-name="default"><b>Kellele Beauty Restart sobib?</b></span></span></h1></div><div data-page-element="Paragraph/V1" class="elParagraphWrapper id-6Z-Pg8awo-1766"><p class="elParagraph" data-style-guide-content="m"><span><span data-page-element="ContentEditableNode" class="ne id-6Z-Pg8awo-1767" data-align-selector=".elParagraph" data-slot-name="default">Beauty Restart võib Sulle sobida, kui:</span></span></p></div><div data-page-element="BulletList/V1" class="elBullet id-6Z-Pg8awo-1435"><ul class="ne elBulletList elBulletLisNew elBulletList2" data-style-guide-content="m"><span data-page-element="ContentEditableNode" class="ne id-6Z-Pg8awo-1436" data-align-selector=".elBulletList li" data-slot-name="default"><li><i data-page-element="IconNode" class="fa-fw fa_icon fas fa-check" contenteditable="false"></i><span class="elBulletListTextWrapper">Sa ei ole kindel, millised nahahooldustooted Sulle sobivad;</span></li><li><i data-page-element="IconNode" class="fa-fw fa_icon fas fa-check" contenteditable="false"></i><span class="elBulletListTextWrapper">Sinu nahk on kuiv, tundlik või tuhm;</span></li><li><i data-page-element="IconNode" class="fa-fw fa_icon fas fa-check" contenteditable="false"></i><span class="elBulletListTextWrapper">soovid leida sobivaid mineraaljumestuse toone;</span></li><li><i data-page-element="IconNode" class="fa-fw fa_icon fas fa-check" contenteditable="false"></i><span class="elBulletListTextWrapper">soovid oma igapäevast ilurutiini lihtsustada;</span></li><li><i data-page-element="IconNode" class="fa-fw fa_icon fas fa-check" contenteditable="false"></i><span class="elBulletListTextWrapper">eelistad personaalseid soovitusi juhuslikele tootevalikutele;</span></li><li><i data-page-element="IconNode" class="fa-fw fa_icon fas fa-check" contenteditable="false"></i><span class="elBulletListTextWrapper">soovid enne ostmist tooteid oma nahal proovida.</span></li></span></ul></div><div data-page-element="Paragraph/V1" class="elParagraphWrapper id-6Z-Pg8awo-1138"><p class="elParagraph" data-style-guide-content="m"><span><span data-page-element="ContentEditableNode" class="ne id-6Z-Pg8awo-1139" data-align-selector=".elParagraph" data-slot-name="default">Beauty Restart on rahulik ja personaalne võimalus võtta aega iseendale ning teha teadlikumaid iluhoolduse valikuid.</span></span></p></div><div data-page-element="Headline/V1" class="elHeadlineWrapper id-6Z-VOYZV4-123"><h1 class="elHeadline" data-style-guide-headline="m"><i data-page-element="IconNode" class="fa-fw fa_icon fa_prepended id-IconNode fas fa-gem"></i><span><span data-page-element="ContentEditableNode" class="ne id-6Z-VOYZV4-124" data-align-selector=".elHeadline" data-slot-name="default"><b>Miks valida Beauty Restart?</b></span></span></h1></div><div data-page-element="BulletList/V1" class="elBullet id-6Z-VOYZV4-2083"><ul class="ne elBulletList elBulletLisNew elBulletList2" data-style-guide-content="m"><span data-page-element="ContentEditableNode" class="ne id-6Z-VOYZV4-2084" data-align-selector=".elBulletList li" data-slot-name="default"><li><i data-page-element="IconNode" class="fa-fw fa_icon fas fa-check" contenteditable="false"></i><span class="elBulletListTextWrapper">90-minutiline personaalne kohtumine spetsialistiga.</span></li><li><i data-page-element="IconNode" class="fa-fw fa_icon fas fa-check" contenteditable="false"></i><span class="elBulletListTextWrapper">Naha vajadustest ja eesmärkidest lähtuvad soovitused.</span></li><li><i data-page-element="IconNode" class="fa-fw fa_icon fas fa-check" contenteditable="false"></i><span class="elBulletListTextWrapper">Nahahooldus- ja mineraalkosmeetikatoodete proovimine.</span></li><li><i data-page-element="IconNode" class="fa-fw fa_icon fas fa-check" contenteditable="false"></i><span class="elBulletListTextWrapper">Sobivate tekstuuride ja jumestustoonide valimine.</span></li><li><i data-page-element="IconNode" class="fa-fw fa_icon fas fa-check" contenteditable="false"></i><span class="elBulletListTextWrapper">Praktilised soovitused igapäevaseks ilurutiiniks.</span></li><li><i data-page-element="IconNode" class="fa-fw fa_icon fas fa-check" contenteditable="false"></i><span class="elBulletListTextWrapper">Võimalus näha valitud toodete tulemust oma nahal.</span></li></span></ul></div><div data-page-element="Paragraph/V1" class="elParagraphWrapper id-6Z-Pg8awo-1138"><p class="elParagraph" data-style-guide-content="m"><span><span data-page-element="ContentEditableNode" class="ne id-6Z-Pg8awo-1139" data-align-selector=".elParagraph" data-slot-name="default"><b>Me räägime Sinu ilukeelt!</b></span></span></p></div></div></div></div><div data-page-element="RowContainer/V1" class="row id-6Z-VOYZV4-875" data-slot-name="default"><div data-page-element="ColContainer/V1" class="col-md-12 innerContent col_left  id-6Z-VOYZV4-876"><div class="col-inner"><div data-page-element="Headline/V1" class="elHeadlineWrapper id-6Z-VOYZV4-877"><h1 class="elHeadline" data-style-guide-headline="m"><span><span data-page-element="ContentEditableNode" class="ne id-6Z-VOYZV4-878" data-align-selector=".elHeadline" data-slot-name="default">Sinu FBH Rewards klubiliikme eelis</span></span></h1></div><div data-page-element="Paragraph/V1" class="elParagraphWrapper id-6Z-VOYZV4-881"><p class="elParagraph" data-style-guide-content="m"><span><span data-page-element="ContentEditableNode" class="ne id-6Z-VOYZV4-882" data-align-selector=".elParagraph" data-slot-name="default"><b>Beauty Restart — 20 punkti</b><br/>90 minutit personaalset konsultatsiooni<br/>Tavaväärtus 45 €<br/><br/><b>LISAKS</b><br/>Beauty Restarti päeval saad kõik täishinnaga tooted –20% soodsamalt.</span></span></p></div></div></div></div><div data-page-element="RowContainer/V1" class="row id-6Z-VOYZV4-2032" data-slot-name="default"><div data-page-element="ColContainer/V1" class="col-md-12 innerContent col_left  id-6Z-VOYZV4-2033"><div class="col-inner"><div data-page-element="Accordion/V1" class="id-6Z-VOYZV4-2034"><div class="elAccordionWrapper"><div data-page-element="AccordionItem" data-header-state="default" data-liquid-replace="item" class="id-6Z-VOYZV4-2035"><div class="elAccordionItemHeader"><div class="elAccordionItemHeaderTextWrapper"><span class="elAccordionItemHeaderText"><span data-page-element="ContentEditableNode" class="ne id-6Z-VOYZV4-2036" data-align-selector=".elAccordionItemHeaderText" data-slot-name="default">Kuidas kasutada?</span></span></div><div class="elAccordionItemHeaderAfterIcon"><i class="fas fa-angle-right"></i></div></div><div class="elAccordionItemBody"><div data-page-element="BulletList/V1" class="elBullet id-6Z-VOYZV4-2038"><ul class="ne elBulletList elBulletLisNew elBulletList2" data-style-guide-content="m" data-list-type="ordered"><span data-page-element="ContentEditableNode" class="ne id-6Z-VOYZV4-2039" data-align-selector=".elBulletList li" data-slot-name="default"><li><i data-page-element="IconNode" class="fa-fw fa_icon fa fa-check" contenteditable="false"></i><span class="elBulletListTextWrapper">Ava FBH Rewards äpis Beauty Restarti preemia.<br/>Preemia kasutamiseks vajad 20 punkti.</span></li><li><i data-page-element="IconNode" class="fa-fw fa_icon fa fa-check" contenteditable="false"></i><span class="elBulletListTextWrapper">Broneeri aeg, vajutades nuppu „Broneeri Beauty Restart“.<br/>Või kasuta allolevat linki:<br/><a href="https://salonlife.com/et/nanoasia-3958/book" target="_self" class="elTypographyLink" rel="noopener">https://salonlife.com/et/nanoasia-3958/book</a></span></li><li><i data-page-element="IconNode" class="fa-fw fa_icon fa fa-check" contenteditable="false"></i><span class="elBulletListTextWrapper">Broneerimisel või enne külastust anna meie meeskonnale teada, et soovid kasutada oma Beauty Restarti preemiat.</span></li><li><i data-page-element="IconNode" class="fa-fw fa_icon fa fa-check" contenteditable="false"></i><span class="elBulletListTextWrapper">Näita külastuse ajal preemiat meie meeskonnale ja naudi personaalset nahahoolduse ning mineraalkosmeetika konsultatsiooni.</span></li></span></ul></div></div></div></div></div></div></div></div><div data-page-element="RowContainer/V1" class="row id-6Z-VOYZV4-1953" data-slot-name="default"><div data-page-element="ColContainer/V1" class="col-md-12 innerContent col_left  id-6Z-VOYZV4-1954"><div class="col-inner"><div data-page-element="Accordion/V1" class="id-6Z-VOYZV4-1955"><div class="elAccordionWrapper"><div data-page-element="AccordionItem" data-header-state="default" data-liquid-replace="item" class="id-6Z-VOYZV4-1956"><div class="elAccordionItemHeader"><div class="elAccordionItemHeaderTextWrapper"><span class="elAccordionItemHeaderText"><span data-page-element="ContentEditableNode" class="ne id-6Z-VOYZV4-1957" data-align-selector=".elAccordionItemHeaderText" data-slot-name="default">Pärast kohtumist</span></span></div><div class="elAccordionItemHeaderAfterIcon"><i class="fas fa-angle-right"></i></div></div><div class="elAccordionItemBody"><div data-page-element="Paragraph/V1" class="elParagraphWrapper id-6Z-Pg8awo-1625"><p class="elParagraph" data-style-guide-content="m"><span><span data-page-element="ContentEditableNode" class="ne id-6Z-Pg8awo-1626" data-align-selector=".elParagraph" data-slot-name="default">Beauty Restarti järel mõistad paremini, millised nahahooldus- ja mineraalkosmeetikatooted võiksid Sinu nahale sobida.<br/><br/>Saad kaasa praktilised soovitused, mis aitavad Sul kujundada lihtsamat ja teadlikumat igapäevast ilurutiini.<br/><br/><b>Sinu ilu. Sinu valikud. Spetsialisti juhendamisel.</b></span></span></p></div></div></div></div></div></div></div></div><div data-page-element="RowContainer/V1" class="row id-6Z-VOYZV4-1818" data-slot-name="default"><div data-page-element="ColContainer/V1" class="col-md-12 innerContent col_left  id-6Z-VOYZV4-1819"><div class="col-inner"><div data-page-element="Accordion/V1" class="id-6Z-VOYZV4-1844"><div class="elAccordionWrapper"><div data-page-element="AccordionItem" data-header-state="default" data-liquid-replace="item" class="id-6Z-VOYZV4-1845"><div class="elAccordionItemHeader"><div class="elAccordionItemHeaderTextWrapper"><span class="elAccordionItemHeaderText"><span data-page-element="ContentEditableNode" class="ne id-6Z-VOYZV4-1861" data-align-selector=".elAccordionItemHeaderText" data-slot-name="default">Tingimused</span></span></div><div class="elAccordionItemHeaderAfterIcon"><i class="fas fa-angle-right"></i></div></div><div class="elAccordionItemBody"><div data-page-element="BulletList/V1" class="elBullet id-6Z-VOYZV4-1895"><ul class="ne elBulletList elBulletLisNew elBulletList2" data-style-guide-content="m" data-list-type="icon"><span data-page-element="ContentEditableNode" class="ne id-6Z-VOYZV4-1896" data-align-selector=".elBulletList li" data-slot-name="default"><li><i data-page-element="IconNode" class="fa-fw fa_icon fa fa-check" contenteditable="false"></i><span class="elBulletListTextWrapper">Kehtib ainult FBH Rewards äpi liikmetele.</span></li><li><i data-page-element="IconNode" class="fa-fw fa_icon fa fa-check" contenteditable="false"></i><span class="elBulletListTextWrapper">Preemia maksumus on 20 FBH Rewards punkti.</span></li><li><i data-page-element="IconNode" class="fa-fw fa_icon fa fa-check" contenteditable="false"></i><span class="elBulletListTextWrapper">Preemiat saab kasutada ühe korra kliendi kohta.</span></li><li><i data-page-element="IconNode" class="fa-fw fa_icon fa fa-check" contenteditable="false"></i><span class="elBulletListTextWrapper">Eelnev broneerimine on vajalik.</span></li><li><i data-page-element="IconNode" class="fa-fw fa_icon fa fa-check" contenteditable="false"></i><span class="elBulletListTextWrapper">–20% soodustus kehtib Beauty Restarti päeval ainult täishinnaga toodetele.</span></li></span></ul></div></div></div></div></div></div></div></div><div data-page-element="RowContainer/V1" class="row id-6Z-VOYZV4-1444" data-slot-name="default"><div data-page-element="ColContainer/V1" class="col-md-12 innerContent col_left  id-6Z-VOYZV4-1445"><div class="col-inner"><div data-page-element="Headline/V1" class="elHeadlineWrapper id-6Z-Pg8awo-1130"><h1 class="elHeadline" data-style-guide-headline="m"><i data-page-element="IconNode" class="fa-fw fa_icon fa_prepended id-IconNode fas fa-heart"></i><span><span data-page-element="ContentEditableNode" class="ne id-6Z-Pg8awo-1131" data-align-selector=".elHeadline" data-slot-name="default"><b>Anna oma nahale särav elu!</b></span></span></h1></div><div data-page-element="Paragraph/V1" class="elParagraphWrapper id-6Z-Pg8awo-1766"><p class="elParagraph" data-style-guide-content="m"><span><span data-page-element="ContentEditableNode" class="ne id-6Z-Pg8awo-1767" data-align-selector=".elParagraph" data-slot-name="default">Avasta, millised nahahooldus- ja mineraalkosmeetikatooted sobivad just Sulle.</span></span></p></div><div data-page-element="Button/V1" class="elBTN id-6Z-OX8vj9-5 brCta" data-liquid-replace="item"><a target="_self" href="https://salonlife.com/et/nanoasia-3958/book" class="elButton" data-style-guide-button="style1" rel="noopener"><span class="elButtonMain"><i class="fas fa-spinner fa-spin elButtonSpinner elButtonText"></i><span class="elButtonMainText elButtonText"><i class="fa-fw fa_icon fas fa-pencil-alt fa_prepended"></i>Broneeri Beauty Restart</span></span><span class="elButtonSub"></span></a></div><div data-page-element="Paragraph/V1" class="elParagraphWrapper id-6Z-Pg8awo-1138"><p class="elParagraph" data-style-guide-content="m"><span><span data-page-element="ContentEditableNode" class="ne id-6Z-Pg8awo-1139" data-align-selector=".elParagraph" data-slot-name="default">Vajad broneerimisel abi?<br/>Helista: <a href="tel:+37255500495" class="elTypographyLink">+372 555 00 495</a><br/><br/><b>Favourite Beauty House</b><br/>Lastekodu 23, Tallinn</span></span></p></div></div></div></div></div></div><div data-page-element="SectionContainer/V1" class="container fullContainer stickyBottom layer-sticky-section id-6Z-bYwWKG-52" data-paint-colors="lightest"><div class="containerInnerV2"><div data-page-element="RowContainer/V1" class="row id-6Z-bYwWKG-53" data-slot-name="default"><div data-page-element="ColContainer/V1" class="col-md-12 innerContent col_left  id-6Z-bYwWKG-54"><div class="col-inner"><div data-page-element="Button/V1" class="elBTN id-6Z-OX8vj9-5" data-liquid-replace="item"><a target="_self" href="https://salonlife.com/et/nanoasia-3958/book" class="elButton" data-style-guide-button="style1" rel="noopener"><span class="elButtonMain"><i class="fas fa-spinner fa-spin elButtonSpinner elButtonText"></i><span class="elButtonMainText elButtonText"><i class="fa-fw fa_icon fas fa-pencil-alt fa_prepended"></i>Broneeri Beauty Restart</span></span><span class="elButtonSub"></span></a></div></div></div></div></div></div></div>
+</div><style>.brCta{margin:18px 0 26px!important}.brCta .elButton{width:100%;box-sizing:border-box}.stickyBottom{transition:transform .25s ease,opacity .25s ease}.stickyBottom.bar-away{transform:translateY(110%);opacity:0;pointer-events:none}</style><script>/* Only one booking button at a time: the bottom bar slides away while a booking button on the page is on screen */(()=>{const bar=document.querySelector('.stickyBottom'),btns=document.querySelectorAll('.brCta');if(!bar||!btns.length||!('IntersectionObserver' in window))return;const seen=new Set();const io=new IntersectionObserver(es=>{es.forEach(e=>e.isIntersecting?seen.add(e.target):seen.delete(e.target));bar.classList.toggle('bar-away',seen.size>0)});btns.forEach(b=>io.observe(b))})();</script><script src="assets/navigation.js"></script></body></html>
