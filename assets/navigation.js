@@ -1,3 +1,20 @@
+/* Remember where the visitor was on each page, so going back (also with the app's back button) returns to the same spot */
+const scrollKey = 'fbh-scroll:' + (location.pathname.replace(/\.html$/, '').replace(/\/index$/, '/') || '/');
+function saveScroll() { try { sessionStorage.setItem(scrollKey, String(Math.round(window.scrollY))); } catch (e) {} }
+let scrollSaveTimer;
+window.addEventListener('scroll', () => { clearTimeout(scrollSaveTimer); scrollSaveTimer = setTimeout(saveScroll, 150); }, { passive: true });
+window.addEventListener('pagehide', saveScroll);
+(() => {
+  let cameByLink = false, saved = null;
+  try { cameByLink = sessionStorage.getItem('fbh-link-nav') === '1'; sessionStorage.removeItem('fbh-link-nav'); saved = sessionStorage.getItem(scrollKey); } catch (e) {}
+  const navType = (performance.getEntriesByType && performance.getEntriesByType('navigation')[0] || {}).type;
+  if (saved === null || location.hash || (cameByLink && navType !== 'back_forward')) return;
+  const y = parseInt(saved, 10);
+  const restore = () => { if (y > 0 && window.scrollY < 5) window.scrollTo(0, y); };
+  restore();
+  window.addEventListener('load', restore, { once: true });
+})();
+
 /* Loading feedback stays inside the selected navigation control. */
 let navigationResetTimer;
 const clearNavigationLoading = () => {
@@ -13,6 +30,8 @@ const navigateWithFeedback = (control, url) => {
   control.classList.add('is-opening');
   control.setAttribute('aria-busy', 'true');
   navigationResetTimer = setTimeout(clearNavigationLoading, 8000);
+  saveScroll();
+  try { sessionStorage.setItem('fbh-link-nav', '1'); } catch (e) {}
   requestAnimationFrame(() => requestAnimationFrame(() => location.assign(url)));
 };
 const prepareNavigation = (control, isCard = false) => {

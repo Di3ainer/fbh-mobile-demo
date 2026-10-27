@@ -21,8 +21,6 @@ html{overflow-x:hidden}body{margin:0;padding-bottom:100px!important;background:#
 .new-page .brand-jumps a{font-size:14px;min-height:44px;font-weight:500}.new-page .brand-jumps{gap:28px!important}
 
 
-/* Space for the phone status bar: the app shifts the page up by about its height when scrolling */
-body{padding-top:50px!important}
 
 /* Keep space above the first heading when the brand links row is hidden (Jumestus, Koolitused) */
 .new-page .brand-jumps[hidden]{display:block!important;visibility:hidden;height:0;overflow:hidden;margin:0 0 26px!important}
